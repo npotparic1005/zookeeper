@@ -7,11 +7,11 @@ import java.util.concurrent.TimeUnit;
 public class SnapshotScheduler {
     private final ScheduledExecutorService scheduler = Executors.newScheduledThreadPool(1);
 
-    public void startSnapshotRoutine(AccountService accountService, ReplicatedLog replicatedLog, long interval, TimeUnit timeUnit) {
+    public void startSnapshotRoutine(AccountService accountService, ReplicatedLog replicatedLog, long interval, TimeUnit timeUnit,String fileName) {
         Runnable task = new Runnable() {
             public void run() {
                 accountService.takeSnapshot(); // Method to take snapshot of accountService
-                replicatedLog.takeSnapshot();  // Method to take snapshot of replicatedLog
+                replicatedLog.takeSnapshot(fileName);  // Method to take snapshot of replicatedLog
                 System.out.println("Snapshots taken successfully");
             }
         };

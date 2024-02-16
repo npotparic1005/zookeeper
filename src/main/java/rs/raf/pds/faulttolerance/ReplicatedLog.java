@@ -36,11 +36,11 @@ public class ReplicatedLog {
 		String s = new String(data);
 		System.out.println("Log #"+lastLogEntryIndex+":"+s);
 		
-		//fs.write(data);
-		//fs.flush();
+		fs.write(data);
+		fs.flush();
 		writer.write(s);writer.write("\r\n");
 		writer.flush();
-		fs.flush();
+		//fs.flush();
 		
 		return ++lastLogEntryIndex;
 	}
@@ -64,42 +64,26 @@ public class ReplicatedLog {
 		// Implementation to fetch log entries from startIndex to endIndex
 		return new byte[0][];
 	}
-	//uzimanje trenutnog stanja za snapshot
-	public List<LogEntry> getCurrentState() {
-		List<LogEntry> entries = new ArrayList<>();
-		try (FileInputStream input = new FileInputStream("fs")) {
-			while (input.available() > 0) {
-				// Assuming log entries are delimited
-				LogEntry entry = LogEntry.parseDelimitedFrom(input);
-				if (entry != null) {
-					entries.add(entry);
-				}
-			}
+
+	public synchronized void takeSnapshot(String fileName) {
+		try {
+			FileOutputStream snapshotOutputStream = new FileOutputStream(fileName + "_snapshot");
+			ObjectOutputStream objectOutputStream = new ObjectOutputStream(snapshotOutputStream);
+			objectOutputStream.writeObject(getLastLogEntryIndex());
+			objectOutputStream.close();
+			snapshotOutputStream.close();
+			System.out.println("Snapshot taken at log entry index: " + lastLogEntryIndex);
 		} catch (IOException e) {
 			e.printStackTrace();
-		}
-		return entries;
-	}
-	public synchronized void takeSnapshot() {
-		try {
-			// Assuming ReplicatedLog has a method to get the current state or entries
-			List<LogEntry> currentState = this.getCurrentState();
-			FileOutputStream fileOut = new FileOutputStream("replicatedLogSnapshot.ser");
-			ObjectOutputStream out = new ObjectOutputStream(fileOut);
-			out.writeObject(currentState); // Serialize the log entries
-			out.close();
-			fileOut.close();
-			System.out.println("Log Snapshot saved successfully");
-		} catch (IOException i) {
-			i.printStackTrace();
 		}
 	}
 	public void loadFromSnapshot() {
 		try {
 			FileInputStream fileIn = new FileInputStream("replicatedLogSnapshot.ser");
 			ObjectInputStream in = new ObjectInputStream(fileIn);
-			List<LogEntry> logEntries = (List<LogEntry>) in.readObject(); // Assuming you have a list of LogEntry objects
-			// You might need additional logic here to apply the log entries to the current state
+			Long snapshotLastLogEntryIndex = (Long) in.readObject();
+			this.lastLogEntryIndex = snapshotLastLogEntryIndex; // Postavljanje učitane vrednosti kao poslednji indeks loga
+			// Možda će biti potrebno dodatno rukovanje sa učitanim podacima iz snimka
 			in.close();
 			fileIn.close();
 		} catch (IOException | ClassNotFoundException i) {

@@ -251,7 +251,9 @@ public class AppServer extends SyncPrimitive implements Runnable, ReplicatedLog.
 		// 1.4 ucitavanje poslednjeg snapshota
 		//accountService.loadFromSnapshot();
 		//replicatedLog.loadFromSnapshot();
-		 
+
+		// from bfy with luv <3 :3 ^_^ uwu byeee #<3333333333333333333
+
 		Server gRPCServer = ServerBuilder
           .forPort(gRPCPort)
           .addService(new AccountServiceGRPCServer(accService, node)).build();
@@ -261,7 +263,7 @@ public class AppServer extends SyncPrimitive implements Runnable, ReplicatedLog.
 		//1.3 snapshot scheduler koji radi u jednakim vremenskim intervalima
 
 		SnapshotScheduler scheduler = new SnapshotScheduler();
-		scheduler.startSnapshotRoutine(accService, replicatedLog, 1, TimeUnit.MINUTES);
+		scheduler.startSnapshotRoutine(accService, replicatedLog, 1, TimeUnit.MINUTES,logFileName);
  
               
         try{
