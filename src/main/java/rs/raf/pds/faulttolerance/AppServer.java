@@ -1,5 +1,6 @@
 package rs.raf.pds.faulttolerance;
 
+import java.io.FileInputStream;
 import java.io.IOException;
 import java.net.InetAddress;
 import java.nio.charset.StandardCharsets;
@@ -39,7 +40,7 @@ public class AppServer extends SyncPrimitive implements Runnable, ReplicatedLog.
 	int myId = -1;
 	volatile Role myRole = Role.FOLLOWER;
 	final String myGRPCAddress; 
-	Map<String, FollowerGRPCChannel> followersChannelMap = new HashMap<String, FollowerGRPCChannel>();
+	static Map<String, FollowerGRPCChannel> followersChannelMap = new HashMap<String, FollowerGRPCChannel>();
 	String leaaderGRPCAddress = null;
 	
 	volatile boolean running = false;
@@ -91,6 +92,12 @@ public class AppServer extends SyncPrimitive implements Runnable, ReplicatedLog.
 		
 		accountService.setServerState(true);
 		System.out.println("JA SAM LIDER!");
+
+		//za 1.1, kada se postavi lider, on salje followerima svoje logove
+
+		//for (String followerAddress : followersChannelMap.keySet()) {
+		//	sendLogsToFollower(followerAddress, "server#Log.log");
+		//}
 	}
 	protected void setFollowersGRPCChannels(List<String> nodeList) {
 		Map<String, FollowerGRPCChannel> oldMap = followersChannelMap;
@@ -134,6 +141,7 @@ public class AppServer extends SyncPrimitive implements Runnable, ReplicatedLog.
 		}
 		
 	}
+
 	private void checkReplicaCandidate() throws KeeperException, InterruptedException {
 		List<String> list = zk.getChildren(root, false);
         System.out.println("There are total:"+list.size()+ " replicas for elections!");
@@ -172,8 +180,29 @@ public class AppServer extends SyncPrimitive implements Runnable, ReplicatedLog.
             }
         }
 	}
-
-
+//1.1 funkcija za slanje logova followeru
+	public static void sendLogsToFollower(String followerAddress, String logFileName) {
+		try {
+			FileInputStream fis = new FileInputStream(logFileName);
+			byte[] buffer = new byte[1024];
+			int bytesRead;
+			while ((bytesRead = fis.read(buffer)) != -1) {
+				ByteString logData = ByteString.copyFrom(buffer, 0, bytesRead);
+				LogEntry logEntry = LogEntry.newBuilder()
+						.setLogEntryData(logData)
+						.build();
+				ManagedChannel channel = ManagedChannelBuilder.forTarget(followerAddress)
+						.usePlaintext()
+						.build();
+				AccountServiceGrpc.AccountServiceBlockingStub stub = AccountServiceGrpc.newBlockingStub(channel);
+				stub.appendLog(logEntry);
+				channel.shutdown().awaitTermination(5, TimeUnit.SECONDS);
+			}
+			fis.close();
+		} catch (IOException | InterruptedException e) {
+			e.printStackTrace();
+		}
+	}
 	public void election() throws KeeperException, InterruptedException {
 		checkReplicaCandidate();
 	}
@@ -248,11 +277,18 @@ public class AppServer extends SyncPrimitive implements Runnable, ReplicatedLog.
 		 AccountService accService = new AccountService(replicatedLog);
 		 node.setAccountService(accService);
 
-		// 1.4 ucitavanje poslednjeg snapshota
-		//accountService.loadFromSnapshot();
-		//replicatedLog.loadFromSnapshot();
+		 //1.1 provera da li je cvor lider, ako jeste salje svoje logove ostalima
 
-		// from bfy with luv <3 :3 ^_^ uwu byeee #<3333333333333333333
+		if (node.isLeader()) {
+			for (String followerAddress : followersChannelMap.keySet()) {
+				sendLogsToFollower(followerAddress, logFileName);
+			}
+		}
+
+		// 1.4 ucitavanje poslednjeg snapshota
+		accService.loadFromSnapshot();
+		replicatedLog.loadFromSnapshot();
+
 
 		Server gRPCServer = ServerBuilder
           .forPort(gRPCPort)

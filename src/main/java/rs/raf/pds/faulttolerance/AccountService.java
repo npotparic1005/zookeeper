@@ -123,6 +123,7 @@ public class AccountService {
 		try {
 			FileOutputStream fileOut = new FileOutputStream("accountServiceSnapshot.ser");
 			ObjectOutputStream out = new ObjectOutputStream(fileOut);
+			System.out.println(this.amount);
 			out.writeObject(this.amount); // Serialize the account balance
 			out.close();
 			fileOut.close();
@@ -134,8 +135,10 @@ public class AccountService {
 	public void loadFromSnapshot() {
 		try {
 			FileInputStream fileIn = new FileInputStream("accountServiceSnapshot.ser");
+			//FileInputStream fileIn = new FileInputStream("accountServiceSnapshot.txt");
 			ObjectInputStream in = new ObjectInputStream(fileIn);
 			this.amount = (float) in.readObject(); // Assuming 'amount' is the state you want to restore
+			System.out.println("Loaded last AMOUNT: " + amount);
 			in.close();
 			fileIn.close();
 		} catch (IOException | ClassNotFoundException i) {

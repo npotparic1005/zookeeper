@@ -80,6 +80,7 @@ public class AccountServiceGRPCServer extends AccountServiceImplBase  {
 	     responseObserver.onNext(response);
 		 responseObserver.onCompleted(); 
 	}
+	//ne radi
 	@Override
 	public void appendLog(LogEntry request, StreamObserver<LogResponse> responseObserver) {
 		byte[] data = request.getLogEntryData().toByteArray();

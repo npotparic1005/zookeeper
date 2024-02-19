@@ -10,8 +10,8 @@ public class SnapshotScheduler {
     public void startSnapshotRoutine(AccountService accountService, ReplicatedLog replicatedLog, long interval, TimeUnit timeUnit,String fileName) {
         Runnable task = new Runnable() {
             public void run() {
-                accountService.takeSnapshot(); // Method to take snapshot of accountService
-                replicatedLog.takeSnapshot(fileName);  // Method to take snapshot of replicatedLog
+                accountService.takeSnapshot();
+                replicatedLog.takeSnapshot();
                 System.out.println("Snapshots taken successfully");
             }
         };

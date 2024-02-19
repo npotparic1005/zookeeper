@@ -28,21 +28,22 @@ public class ReplicatedLog {
 	}
 		
 	public void appendAndReplicate(byte[] data) throws IOException {
-		Long lastLogEntryIndex = appendToLocalLog(data);
+		//Long lastLogEntryIndex = appendToLocalLog(data);
+		appendToLocalLog(data);
 		node.replicateOnFollowers(lastLogEntryIndex, data);  
 	}
 	
-	protected Long appendToLocalLog(byte[] data) throws IOException {
+	protected void appendToLocalLog(byte[] data) throws IOException {
 		String s = new String(data);
 		System.out.println("Log #"+lastLogEntryIndex+":"+s);
 		
-		fs.write(data);
-		fs.flush();
+		//fs.write(data);
+		//fs.flush();
 		writer.write(s);writer.write("\r\n");
 		writer.flush();
-		//fs.flush();
-		
-		return ++lastLogEntryIndex;
+		//fs.flush(); cek
+
+		lastLogEntryIndex++;
 	}
 
 	protected Long getLastLogEntryIndex() {
@@ -65,9 +66,9 @@ public class ReplicatedLog {
 		return new byte[0][];
 	}
 
-	public synchronized void takeSnapshot(String fileName) {
+	public synchronized void takeSnapshot() {
 		try {
-			FileOutputStream snapshotOutputStream = new FileOutputStream(fileName + "_snapshot");
+			FileOutputStream snapshotOutputStream = new FileOutputStream("replicatedLogSnapshot.ser");
 			ObjectOutputStream objectOutputStream = new ObjectOutputStream(snapshotOutputStream);
 			objectOutputStream.writeObject(getLastLogEntryIndex());
 			objectOutputStream.close();
@@ -77,18 +78,44 @@ public class ReplicatedLog {
 			e.printStackTrace();
 		}
 	}
+
 	public void loadFromSnapshot() {
 		try {
 			FileInputStream fileIn = new FileInputStream("replicatedLogSnapshot.ser");
 			ObjectInputStream in = new ObjectInputStream(fileIn);
-			Long snapshotLastLogEntryIndex = (Long) in.readObject();
-			this.lastLogEntryIndex = snapshotLastLogEntryIndex; // Postavljanje učitane vrednosti kao poslednji indeks loga
-			// Možda će biti potrebno dodatno rukovanje sa učitanim podacima iz snimka
+			this.lastLogEntryIndex = (Long) in.readObject();
+			System.out.println("Loaded last snapshot at log entry index: " + lastLogEntryIndex);
 			in.close();
 			fileIn.close();
 		} catch (IOException | ClassNotFoundException i) {
 			i.printStackTrace();
 		}
+
+//		try {
+//			FileInputStream fileIn = new FileInputStream("replicatedLogSnapshot.ser");
+//			// FileInputStream fileIn = new FileInputStream("replicatedLogSnapshot.txt");
+//			ObjectInputStream in = new ObjectInputStream(fileIn);
+//			Object object;
+//
+//			Long snapshotLastLogEntryIndex = null;
+//			while ((object = in.readObject()) != null) {
+//				if (object instanceof Long) {
+//					snapshotLastLogEntryIndex = (Long) object;
+//
+//					this.lastLogEntryIndex = snapshotLastLogEntryIndex; // Postavljanje učitane vrednosti kao poslednji indeks loga
+//					System.out.println("Loaded last snapshot at log entry index: " + lastLogEntryIndex);
+//
+//					in.close();
+//					fileIn.close();
+//				}
+//			}
+//
+//		} catch (EOFException e) {
+//			System.out.println("Reached end of file while reading snapshot.");
+//			e.printStackTrace();
+//		} catch (IOException | ClassNotFoundException e) {
+//			e.printStackTrace();
+//		}
 	}
-	
+
 }
