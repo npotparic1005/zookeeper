@@ -1,6 +1,8 @@
 package rs.raf.pds.faulttolerance;
 
+import java.io.BufferedReader;
 import java.io.FileInputStream;
+import java.io.FileReader;
 import java.io.IOException;
 import java.net.InetAddress;
 import java.nio.charset.StandardCharsets;
@@ -24,8 +26,7 @@ import io.grpc.ManagedChannelBuilder;
 import io.grpc.Server;
 import io.grpc.ServerBuilder;
 import org.slf4j.LoggerFactory;
-import rs.raf.pds.faulttolerance.gRPC.AccountServiceGrpc;
-import rs.raf.pds.faulttolerance.gRPC.LogEntry;
+import rs.raf.pds.faulttolerance.gRPC.*;
 import rs.raf.pds.zookeeper.core.SyncPrimitive;
 
 public class AppServer extends SyncPrimitive implements Runnable, ReplicatedLog.LogReplicator{
@@ -203,10 +204,131 @@ public class AppServer extends SyncPrimitive implements Runnable, ReplicatedLog.
 			e.printStackTrace();
 		}
 	}
+	//1.2 inicijalizacija stanja servera prolaskom kroz log
+	private void initializeStateFromLog(String logFileName, AccountServiceGrpc.AccountServiceBlockingStub blockingStub) {
+		try (BufferedReader reader = new BufferedReader(new FileReader(logFileName))) {
+			String line;
+			while ((line = reader.readLine()) != null) {
+                String[] parts = line.split(" ");
+                int id = Integer.parseInt(parts[0]);
+                float value = Float.parseFloat(parts[1]);
+
+                AccountResponse response;
+
+                AccountRequest getRequest = null;
+                switch (id) {
+                    case 1:
+                        // Poziv getAmount funkcije na serveru
+                        getRequest = AccountRequest.newBuilder()
+                                .setRequestId(1)
+                                .setOpType(AccountRequestType.GET)
+                                .build();
+                        response = blockingStub.getAmount(getRequest);
+                        break;
+                    case 2:
+                        // Poziv addAmount funkcije na serveru
+                        AccountRequest addRequest = AccountRequest.newBuilder()
+                                .setRequestId(2)
+                                .setOpType(AccountRequestType.ADD)
+                                .setAmount(value)
+                                .build();
+                        response = blockingStub.addAmount(addRequest);
+                        break;
+                    default:
+                        // Nepoznat ID operacije
+                        System.out.println("Nepoznat ID operacije: " + id);
+                        continue;
+                }
+
+                // Ispis rezultata
+                ispisResponse(response, getRequest);
+            }
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+	public static void ispisResponse(AccountResponse response, AccountRequest request) {
+		if (response.getStatus() == RequestStatus.STATUS_OK) {
+			System.out.println("STATUS OK! REQUEST = " + request.getOpType() + ", AMOUNT = " + response.getBalance());
+		} else if (response.getStatus() == RequestStatus.UPDATE_REJECTED_NOT_LEADER) {
+			System.out.println("UPDATE_REJECTED_NOT_LEADER! " + request.getOpType().toString());
+		} else if (response.getStatus() == RequestStatus.WITDRAWAL_REJECT_NOT_SUFFICIENT_AMOUNT) {
+			System.out.println(".WITDRAWAL_REJECT_NOT_SUFFICIENT_AMOUNT! Amount" + request.getAmount());
+		}
+	}
+/*
+				private void getAmount(AccountServiceGrpc.AccountServiceBlockingStub blockingStub, int requestId) {
+					System.out.println("Poziv getAmount() za zahtev sa ID " + requestId);
+					AccountRequest request = AccountRequest.newBuilder()
+							.setRequestId(requestId)
+							.setOpType(AccountRequestType.GET)
+							.build();
+					AccountResponse response = blockingStub.getAmount(request);
+					ispisResponse(response, request);
+				}
+
+				private void addAmount(AccountServiceGrpc.AccountServiceBlockingStub blockingStub, int requestId, float amount) {
+					System.out.println("Poziv addAmount() za zahtev sa ID " + requestId + " i iznosom " + amount);
+					AccountRequest request = AccountRequest.newBuilder()
+							.setRequestId(requestId)
+							.setOpType(AccountRequestType.ADD)
+							.setAmount(amount)
+							.build();
+					AccountResponse response = blockingStub.addAmount(request);
+					ispisResponse(response, request);
+				}
+
+				private void withdrawAmount(AccountServiceGrpc.AccountServiceBlockingStub blockingStub, int requestId, float amount) {
+					System.out.println("Poziv withdrawAmount() za zahtev sa ID " + requestId + " i iznosom " + amount);
+					AccountRequest request = AccountRequest.newBuilder()
+							.setRequestId(requestId)
+							.setOpType(AccountRequestType.WITHDRAW)
+							.setAmount(amount)
+							.build();
+					AccountResponse response = blockingStub.withdrawAmount(request);
+					ispisResponse(response, request);
+				}
+			}
+		}
+	}
+
+	private void getAmount(AccountServiceGrpc.AccountServiceBlockingStub blockingStub, int requestId) {
+		System.out.println("Poziv getAmount() za zahtev sa ID " + requestId);
+		AccountRequest request = AccountRequest.newBuilder()
+				.setRequestId(requestId)
+				.setOpType(AccountRequestType.GET)
+				.build();
+		AccountResponse response = blockingStub.getAmount(request);
+		ispisResponse(response, request);
+	}
+
+	private void addAmount(AccountServiceGrpc.AccountServiceBlockingStub blockingStub, int requestId, float amount) {
+		System.out.println("Poziv addAmount() za zahtev sa ID " + requestId + " i iznosom " + amount);
+		AccountRequest request = AccountRequest.newBuilder()
+				.setRequestId(requestId)
+				.setOpType(AccountRequestType.ADD)
+				.setAmount(amount)
+				.build();
+		AccountResponse response = blockingStub.addAmount(request);
+		ispisResponse(response, request);
+	}
+
+	private void withdrawAmount(AccountServiceGrpc.AccountServiceBlockingStub blockingStub, int requestId, float amount) {
+		System.out.println("Poziv withdrawAmount() za zahtev sa ID " + requestId + " i iznosom " + amount);
+		AccountRequest request = AccountRequest.newBuilder()
+				.setRequestId(requestId)
+				.setOpType(AccountRequestType.WITHDRAW)
+				.setAmount(amount)
+				.build();
+		AccountResponse response = blockingStub.withdrawAmount(request);
+		ispisResponse(response, request);
+	}
+
+ */
 	public void election() throws KeeperException, InterruptedException {
 		checkReplicaCandidate();
 	}
-	
+
 	@Override
 	public void run() {
 		while(running) {

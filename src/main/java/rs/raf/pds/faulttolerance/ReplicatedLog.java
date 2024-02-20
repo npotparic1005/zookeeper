@@ -41,7 +41,7 @@ public class ReplicatedLog {
 		//fs.flush();
 		writer.write(s);writer.write("\r\n");
 		writer.flush();
-		//fs.flush(); cek
+		//fs.flush();
 
 		lastLogEntryIndex++;
 	}
