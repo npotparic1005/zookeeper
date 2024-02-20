@@ -35,6 +35,7 @@ public class AppServer extends SyncPrimitive implements Runnable, ReplicatedLog.
 	public static final String REPLICA_NODE_NAME ="/candid";
 	public static final int REPLICA_NODE_SEQUENCE_INDEX= REPLICA_NODE_NAME.length()-1; 
 	public enum Role {FOLLOWER, LEADER};
+
 	
 	
 	static AccountService accountService;
@@ -204,6 +205,7 @@ public class AppServer extends SyncPrimitive implements Runnable, ReplicatedLog.
 			e.printStackTrace();
 		}
 	}
+	/*
 	//1.2 inicijalizacija stanja servera prolaskom kroz log
 	private void initializeStateFromLog(String logFileName, AccountServiceGrpc.AccountServiceBlockingStub blockingStub) {
 		try (BufferedReader reader = new BufferedReader(new FileReader(logFileName))) {
@@ -256,75 +258,62 @@ public class AppServer extends SyncPrimitive implements Runnable, ReplicatedLog.
 			System.out.println(".WITDRAWAL_REJECT_NOT_SUFFICIENT_AMOUNT! Amount" + request.getAmount());
 		}
 	}
-/*
-				private void getAmount(AccountServiceGrpc.AccountServiceBlockingStub blockingStub, int requestId) {
-					System.out.println("Poziv getAmount() za zahtev sa ID " + requestId);
-					AccountRequest request = AccountRequest.newBuilder()
-							.setRequestId(requestId)
-							.setOpType(AccountRequestType.GET)
-							.build();
-					AccountResponse response = blockingStub.getAmount(request);
-					ispisResponse(response, request);
+*/
+	private void initializeStateFromLog(String logFileName) {
+		try (BufferedReader reader = new BufferedReader(new FileReader(logFileName))) {
+			String line;
+			while ((line = reader.readLine()) != null) {
+				String[] parts = line.split(" ");
+				int id = Integer.parseInt(parts[0]);
+				float value = Float.parseFloat(parts[1]);
+
+				AccountResponse response;
+
+				switch (id) {
+					case 1:
+						// Simulacija odgovora za getAmount funkciju
+						float amount = simulateGetAmount(value);
+						response = AccountResponse.newBuilder()
+								.setStatus(RequestStatus.STATUS_OK)
+								.setBalance(amount)
+								.build();
+						break;
+					case 2:
+						// Simulacija odgovora za addAmount funkciju
+						float newBalance = simulateAddAmount(value);
+						response = AccountResponse.newBuilder()
+								.setStatus(RequestStatus.STATUS_OK)
+								.setBalance(newBalance)
+								.build();
+						break;
+					default:
+						// Nepoznat ID operacije
+						System.out.println("Nepoznat ID operacije: " + id);
+						continue;
 				}
 
-				private void addAmount(AccountServiceGrpc.AccountServiceBlockingStub blockingStub, int requestId, float amount) {
-					System.out.println("Poziv addAmount() za zahtev sa ID " + requestId + " i iznosom " + amount);
-					AccountRequest request = AccountRequest.newBuilder()
-							.setRequestId(requestId)
-							.setOpType(AccountRequestType.ADD)
-							.setAmount(amount)
-							.build();
-					AccountResponse response = blockingStub.addAmount(request);
-					ispisResponse(response, request);
-				}
-
-				private void withdrawAmount(AccountServiceGrpc.AccountServiceBlockingStub blockingStub, int requestId, float amount) {
-					System.out.println("Poziv withdrawAmount() za zahtev sa ID " + requestId + " i iznosom " + amount);
-					AccountRequest request = AccountRequest.newBuilder()
-							.setRequestId(requestId)
-							.setOpType(AccountRequestType.WITHDRAW)
-							.setAmount(amount)
-							.build();
-					AccountResponse response = blockingStub.withdrawAmount(request);
-					ispisResponse(response, request);
-				}
+				// Ispis rezultata
+				ispisResponse(response, id);
 			}
+		} catch (IOException e) {
+			e.printStackTrace();
 		}
 	}
 
-	private void getAmount(AccountServiceGrpc.AccountServiceBlockingStub blockingStub, int requestId) {
-		System.out.println("Poziv getAmount() za zahtev sa ID " + requestId);
-		AccountRequest request = AccountRequest.newBuilder()
-				.setRequestId(requestId)
-				.setOpType(AccountRequestType.GET)
-				.build();
-		AccountResponse response = blockingStub.getAmount(request);
-		ispisResponse(response, request);
+	private float simulateGetAmount(float currentValue) {
+		return currentValue;
 	}
 
-	private void addAmount(AccountServiceGrpc.AccountServiceBlockingStub blockingStub, int requestId, float amount) {
-		System.out.println("Poziv addAmount() za zahtev sa ID " + requestId + " i iznosom " + amount);
-		AccountRequest request = AccountRequest.newBuilder()
-				.setRequestId(requestId)
-				.setOpType(AccountRequestType.ADD)
-				.setAmount(amount)
-				.build();
-		AccountResponse response = blockingStub.addAmount(request);
-		ispisResponse(response, request);
+	// Simulacija odgovora za addAmount funkciju
+	private float simulateAddAmount(float value) {
+		return value;
 	}
 
-	private void withdrawAmount(AccountServiceGrpc.AccountServiceBlockingStub blockingStub, int requestId, float amount) {
-		System.out.println("Poziv withdrawAmount() za zahtev sa ID " + requestId + " i iznosom " + amount);
-		AccountRequest request = AccountRequest.newBuilder()
-				.setRequestId(requestId)
-				.setOpType(AccountRequestType.WITHDRAW)
-				.setAmount(amount)
-				.build();
-		AccountResponse response = blockingStub.withdrawAmount(request);
-		ispisResponse(response, request);
+	// Funkcija za ispis rezultata
+	private void ispisResponse(AccountResponse response, int requestId) {
+		// Implementirajte logiku za ispis rezultata, na primer, možete ispisati status i balans koji je vraćen u odgovoru
+		System.out.println("Request ID: " + requestId + ", Status: " + response.getStatus() + ", Balance: " + response.getBalance());
 	}
-
- */
 	public void election() throws KeeperException, InterruptedException {
 		checkReplicaCandidate();
 	}
@@ -399,7 +388,12 @@ public class AppServer extends SyncPrimitive implements Runnable, ReplicatedLog.
 		 AccountService accService = new AccountService(replicatedLog);
 		 node.setAccountService(accService);
 
-		 //1.1 provera da li je cvor lider, ako jeste salje svoje logove ostalima
+
+		//1.2 Inicijalizacija stanja iz log fajla
+		//node.initializeStateFromLog(logFileName, blockingStub);
+
+
+		//1.1 provera da li je cvor lider, ako jeste salje svoje logove ostalima
 
 		if (node.isLeader()) {
 			for (String followerAddress : followersChannelMap.keySet()) {
@@ -410,6 +404,9 @@ public class AppServer extends SyncPrimitive implements Runnable, ReplicatedLog.
 		// 1.4 ucitavanje poslednjeg snapshota
 		accService.loadFromSnapshot();
 		replicatedLog.loadFromSnapshot();
+
+		//1.2 Inicijalizacija stanja iz log fajla
+		node.initializeStateFromLog(logFileName);
 
 
 		Server gRPCServer = ServerBuilder

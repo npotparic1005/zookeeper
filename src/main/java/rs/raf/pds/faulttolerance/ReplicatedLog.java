@@ -23,7 +23,7 @@ public class ReplicatedLog {
 	
 	public ReplicatedLog(String fileName, LogReplicator node) throws FileNotFoundException {
 		this.node = node;
-		fs = new FileOutputStream(fileName);
+		fs = new FileOutputStream(fileName,true);
 		writer = new OutputStreamWriter(fs);
 	}
 		

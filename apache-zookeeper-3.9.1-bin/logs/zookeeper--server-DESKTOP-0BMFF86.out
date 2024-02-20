@@ -1,116 +1,111 @@
-2024-02-16 03:15:21,007 [myid:] - INFO  [main:o.a.z.s.q.QuorumPeerConfig@177] - Reading configuration from: C:\\Users\\mik\\Downloads\\PDS-FT1-INT\\apache-zookeeper-3.9.1-bin\\conf\\zoo.cfg
-2024-02-16 03:15:21,011 [myid:] - WARN  [main:o.a.z.s.u.VerifyingFileFactory@65] - \var\lib\zookeeper is relative. Prepend .\ to indicate that you're sure!
-2024-02-16 03:15:21,012 [myid:] - INFO  [main:o.a.z.s.q.QuorumPeerConfig@440] - clientPortAddress is 0.0.0.0:2181
-2024-02-16 03:15:21,013 [myid:] - INFO  [main:o.a.z.s.q.QuorumPeerConfig@444] - secureClientPort is not set
-2024-02-16 03:15:21,013 [myid:] - INFO  [main:o.a.z.s.q.QuorumPeerConfig@460] - observerMasterPort is not set
-2024-02-16 03:15:21,013 [myid:] - INFO  [main:o.a.z.s.q.QuorumPeerConfig@477] - metricsProvider.className is org.apache.zookeeper.metrics.impl.DefaultMetricsProvider
-2024-02-16 03:15:21,015 [myid:] - INFO  [main:o.a.z.s.DatadirCleanupManager@78] - autopurge.snapRetainCount set to 3
-2024-02-16 03:15:21,015 [myid:] - INFO  [main:o.a.z.s.DatadirCleanupManager@79] - autopurge.purgeInterval set to 0
-2024-02-16 03:15:21,015 [myid:] - INFO  [main:o.a.z.s.DatadirCleanupManager@101] - Purge task is not scheduled.
-2024-02-16 03:15:21,016 [myid:] - WARN  [main:o.a.z.s.q.QuorumPeerMain@139] - Either no config or no quorum defined in config, running in standalone mode
-2024-02-16 03:15:21,018 [myid:] - INFO  [main:o.a.z.j.ManagedUtil@46] - Log4j 1.2 jmx support not found; jmx disabled.
-2024-02-16 03:15:21,018 [myid:] - INFO  [main:o.a.z.s.q.QuorumPeerConfig@177] - Reading configuration from: C:\\Users\\mik\\Downloads\\PDS-FT1-INT\\apache-zookeeper-3.9.1-bin\\conf\\zoo.cfg
-2024-02-16 03:15:21,020 [myid:] - WARN  [main:o.a.z.s.u.VerifyingFileFactory@65] - \var\lib\zookeeper is relative. Prepend .\ to indicate that you're sure!
-2024-02-16 03:15:21,021 [myid:] - INFO  [main:o.a.z.s.q.QuorumPeerConfig@440] - clientPortAddress is 0.0.0.0:2181
-2024-02-16 03:15:21,023 [myid:] - INFO  [main:o.a.z.s.q.QuorumPeerConfig@444] - secureClientPort is not set
-2024-02-16 03:15:21,024 [myid:] - INFO  [main:o.a.z.s.q.QuorumPeerConfig@460] - observerMasterPort is not set
-2024-02-16 03:15:21,025 [myid:] - INFO  [main:o.a.z.s.q.QuorumPeerConfig@477] - metricsProvider.className is org.apache.zookeeper.metrics.impl.DefaultMetricsProvider
-2024-02-16 03:15:21,027 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServerMain@123] - Starting server
-2024-02-16 03:15:21,055 [myid:] - INFO  [main:o.a.z.s.ServerMetrics@64] - ServerMetrics initialized with provider org.apache.zookeeper.metrics.impl.DefaultMetricsProvider@6989da5e
-2024-02-16 03:15:21,063 [myid:] - INFO  [main:o.a.z.s.a.DigestAuthenticationProvider@51] - ACL digest algorithm is: SHA1
-2024-02-16 03:15:21,063 [myid:] - INFO  [main:o.a.z.s.a.DigestAuthenticationProvider@65] - zookeeper.DigestAuthenticationProvider.enabled = true
-2024-02-16 03:15:21,066 [myid:] - INFO  [main:o.a.z.s.p.FileTxnSnapLog@124] - zookeeper.snapshot.trust.empty : false
-2024-02-16 03:15:21,081 [myid:] - INFO  [main:o.a.z.ZookeeperBanner@42] - 
-2024-02-16 03:15:21,081 [myid:] - INFO  [main:o.a.z.ZookeeperBanner@42] -   ______                  _                                          
-2024-02-16 03:15:21,081 [myid:] - INFO  [main:o.a.z.ZookeeperBanner@42] -  |___  /                 | |                                         
-2024-02-16 03:15:21,081 [myid:] - INFO  [main:o.a.z.ZookeeperBanner@42] -     / /    ___     ___   | | __   ___    ___   _ __     ___   _ __   
-2024-02-16 03:15:21,081 [myid:] - INFO  [main:o.a.z.ZookeeperBanner@42] -    / /    / _ \   / _ \  | |/ /  / _ \  / _ \ | '_ \   / _ \ | '__|
-2024-02-16 03:15:21,081 [myid:] - INFO  [main:o.a.z.ZookeeperBanner@42] -   / /__  | (_) | | (_) | |   <  |  __/ |  __/ | |_) | |  __/ | |    
-2024-02-16 03:15:21,081 [myid:] - INFO  [main:o.a.z.ZookeeperBanner@42] -  /_____|  \___/   \___/  |_|\_\  \___|  \___| | .__/   \___| |_|
-2024-02-16 03:15:21,081 [myid:] - INFO  [main:o.a.z.ZookeeperBanner@42] -                                               | |                     
-2024-02-16 03:15:21,082 [myid:] - INFO  [main:o.a.z.ZookeeperBanner@42] -                                               |_|                     
-2024-02-16 03:15:21,082 [myid:] - INFO  [main:o.a.z.ZookeeperBanner@42] - 
-2024-02-16 03:15:25,609 [myid:] - INFO  [main:o.a.z.Environment@98] - Server environment:zookeeper.version=3.9.1-1398af177833412e9ead6b9bb737dc9fd7418a45, built on 2023-10-04 09:54 UTC
-2024-02-16 03:15:25,609 [myid:] - INFO  [main:o.a.z.Environment@98] - Server environment:host.name=DESKTOP-0BMFF86
-2024-02-16 03:15:25,610 [myid:] - INFO  [main:o.a.z.Environment@98] - Server environment:java.version=17.0.9
-2024-02-16 03:15:25,610 [myid:] - INFO  [main:o.a.z.Environment@98] - Server environment:java.vendor=Oracle Corporation
-2024-02-16 03:15:25,610 [myid:] - INFO  [main:o.a.z.Environment@98] - Server environment:java.home=C:\Program Files\Java\jdk-17
-2024-02-16 03:15:25,610 [myid:] - INFO  [main:o.a.z.Environment@98] - Server environment:java.class.path=C:\\Users\\mik\\Downloads\\PDS-FT1-INT\\apache-zookeeper-3.9.1-bin\\zookeeper-metrics-providers\\zookeeper-prometheus-metrics\\target\\classes;C:\\Users\\mik\\Downloads\\PDS-FT1-INT\\apache-zookeeper-3.9.1-bin\\zookeeper-server\\target\\classes;C:\\Users\\mik\\Downloads\\PDS-FT1-INT\\apache-zookeeper-3.9.1-bin\\build\\classes;C:\\Users\\mik\\Downloads\\PDS-FT1-INT\\apache-zookeeper-3.9.1-bin\\zookeeper-metrics-providers\\zookeeper-prometheus-metrics\\target\\lib\\*.jar;C:\\Users\\mik\\Downloads\\PDS-FT1-INT\\apache-zookeeper-3.9.1-bin\\zookeeper-server\\target\\lib\\*.jar;C:\\Users\\mik\\Downloads\\PDS-FT1-INT\\apache-zookeeper-3.9.1-bin\\build\\lib\\*.jar;C:\\Users\\mik\\Downloads\\PDS-FT1-INT\\apache-zookeeper-3.9.1-bin\\lib\\zookeeper-prometheus-metrics-3.9.1.jar;C:\\Users\\mik\\Downloads\\PDS-FT1-INT\\apache-zookeeper-3.9.1-bin\\lib\\zookeeper-jute-3.9.1.jar;C:\\Users\\mik\\Downloads\\PDS-FT1-INT\\apache-zookeeper-3.9.1-bin\\lib\\zookeeper-3.9.1.jar;C:\\Users\\mik\\Downloads\\PDS-FT1-INT\\apache-zookeeper-3.9.1-bin\\lib\\snappy-java-1.1.10.5.jar;C:\\Users\\mik\\Downloads\\PDS-FT1-INT\\apache-zookeeper-3.9.1-bin\\lib\\slf4j-api-1.7.30.jar;C:\\Users\\mik\\Downloads\\PDS-FT1-INT\\apache-zookeeper-3.9.1-bin\\lib\\simpleclient_servlet-0.9.0.jar;C:\\Users\\mik\\Downloads\\PDS-FT1-INT\\apache-zookeeper-3.9.1-bin\\lib\\simpleclient_hotspot-0.9.0.jar;C:\\Users\\mik\\Downloads\\PDS-FT1-INT\\apache-zookeeper-3.9.1-bin\\lib\\simpleclient_common-0.9.0.jar;C:\\Users\\mik\\Downloads\\PDS-FT1-INT\\apache-zookeeper-3.9.1-bin\\lib\\simpleclient-0.9.0.jar;C:\\Users\\mik\\Downloads\\PDS-FT1-INT\\apache-zookeeper-3.9.1-bin\\lib\\netty-transport-native-unix-common-4.1.94.Final.jar;C:\\Users\\mik\\Downloads\\PDS-FT1-INT\\apache-zookeeper-3.9.1-bin\\lib\\netty-transport-native-epoll-4.1.94.Final-linux-x86_64.jar;C:\\Users\\mik\\Downloads\\PDS-FT1-INT\\apache-zookeeper-3.9.1-bin\\lib\\netty-transport-classes-epoll-4.1.94.Final.jar;C:\\Users\\mik\\Downloads\\PDS-FT1-INT\\apache-zookeeper-3.9.1-bin\\lib\\netty-transport-4.1.94.Final.jar;C:\\Users\\mik\\Downloads\\PDS-FT1-INT\\apache-zookeeper-3.9.1-bin\\lib\\netty-tcnative-classes-2.0.61.Final.jar;C:\\Users\\mik\\Downloads\\PDS-FT1-INT\\apache-zookeeper-3.9.1-bin\\lib\\netty-tcnative-boringssl-static-2.0.61.Final.jar;C:\\Users\\mik\\Downloads\\PDS-FT1-INT\\apache-zookeeper-3.9.1-bin\\lib\\netty-tcnative-boringssl-static-2.0.61.Final-windows-x86_64.jar;C:\\Users\\mik\\Downloads\\PDS-FT1-INT\\apache-zookeeper-3.9.1-bin\\lib\\netty-tcnative-boringssl-static-2.0.61.Final-osx-x86_64.jar;C:\\Users\\mik\\Downloads\\PDS-FT1-INT\\apache-zookeeper-3.9.1-bin\\lib\\netty-tcnative-boringssl-static-2.0.61.Final-osx-aarch_64.jar;C:\\Users\\mik\\Downloads\\PDS-FT1-INT\\apache-zookeeper-3.9.1-bin\\lib\\netty-tcnative-boringssl-static-2.0.61.Final-linux-x86_64.jar;C:\\Users\\mik\\Downloads\\PDS-FT1-INT\\apache-zookeeper-3.9.1-bin\\lib\\netty-tcnative-boringssl-static-2.0.61.Final-linux-aarch_64.jar;C:\\Users\\mik\\Downloads\\PDS-FT1-INT\\apache-zookeeper-3.9.1-bin\\lib\\netty-resolver-4.1.94.Final.jar;C:\\Users\\mik\\Downloads\\PDS-FT1-INT\\apache-zookeeper-3.9.1-bin\\lib\\netty-handler-4.1.94.Final.jar;C:\\Users\\mik\\Downloads\\PDS-FT1-INT\\apache-zookeeper-3.9.1-bin\\lib\\netty-common-4.1.94.Final.jar;C:\\Users\\mik\\Downloads\\PDS-FT1-INT\\apache-zookeeper-3.9.1-bin\\lib\\netty-codec-4.1.94.Final.jar;C:\\Users\\mik\\Downloads\\PDS-FT1-INT\\apache-zookeeper-3.9.1-bin\\lib\\netty-buffer-4.1.94.Final.jar;C:\\Users\\mik\\Downloads\\PDS-FT1-INT\\apache-zookeeper-3.9.1-bin\\lib\\metrics-core-4.1.12.1.jar;C:\\Users\\mik\\Downloads\\PDS-FT1-INT\\apache-zookeeper-3.9.1-bin\\lib\\logback-core-1.2.10.jar;C:\\Users\\mik\\Downloads\\PDS-FT1-INT\\apache-zookeeper-3.9.1-bin\\lib\\logback-classic-1.2.10.jar;C:\\Users\\mik\\Downloads\\PDS-FT1-INT\\apache-zookeeper-3.9.1-bin\\lib\\jline-2.14.6.jar;C:\\Users\\mik\\Downloads\\PDS-FT1-INT\\apache-zookeeper-3.9.1-bin\\lib\\jetty-util-ajax-9.4.52.v20230823.jar;C:\\Users\\mik\\Downloads\\PDS-FT1-INT\\apache-zookeeper-3.9.1-bin\\lib\\jetty-util-9.4.52.v20230823.jar;C:\\Users\\mik\\Downloads\\PDS-FT1-INT\\apache-zookeeper-3.9.1-bin\\lib\\jetty-servlet-9.4.52.v20230823.jar;C:\\Users\\mik\\Downloads\\PDS-FT1-INT\\apache-zookeeper-3.9.1-bin\\lib\\jetty-server-9.4.52.v20230823.jar;C:\\Users\\mik\\Downloads\\PDS-FT1-INT\\apache-zookeeper-3.9.1-bin\\lib\\jetty-security-9.4.52.v20230823.jar;C:\\Users\\mik\\Downloads\\PDS-FT1-INT\\apache-zookeeper-3.9.1-bin\\lib\\jetty-io-9.4.52.v20230823.jar;C:\\Users\\mik\\Downloads\\PDS-FT1-INT\\apache-zookeeper-3.9.1-bin\\lib\\jetty-http-9.4.52.v20230823.jar;C:\\Users\\mik\\Downloads\\PDS-FT1-INT\\apache-zookeeper-3.9.1-bin\\lib\\javax.servlet-api-3.1.0.jar;C:\\Users\\mik\\Downloads\\PDS-FT1-INT\\apache-zookeeper-3.9.1-bin\\lib\\jackson-databind-2.15.2.jar;C:\\Users\\mik\\Downloads\\PDS-FT1-INT\\apache-zookeeper-3.9.1-bin\\lib\\jackson-core-2.15.2.jar;C:\\Users\\mik\\Downloads\\PDS-FT1-INT\\apache-zookeeper-3.9.1-bin\\lib\\jackson-annotations-2.15.2.jar;C:\\Users\\mik\\Downloads\\PDS-FT1-INT\\apache-zookeeper-3.9.1-bin\\lib\\commons-io-2.11.0.jar;C:\\Users\\mik\\Downloads\\PDS-FT1-INT\\apache-zookeeper-3.9.1-bin\\lib\\commons-cli-1.5.0.jar;C:\\Users\\mik\\Downloads\\PDS-FT1-INT\\apache-zookeeper-3.9.1-bin\\lib\\audience-annotations-0.12.0.jar;C:\\Users\\mik\\Downloads\\PDS-FT1-INT\\apache-zookeeper-3.9.1-bin\\zookeeper-*.jar;C:\\Users\\mik\\Downloads\\PDS-FT1-INT\\apache-zookeeper-3.9.1-bin\\zookeeper-server\\src\\main\\resources\\lib\\*.jar;C:\\Users\\mik\\Downloads\\PDS-FT1-INT\\apache-zookeeper-3.9.1-bin\\conf;.
-2024-02-16 03:15:25,610 [myid:] - INFO  [main:o.a.z.Environment@98] - Server environment:java.library.path=C:\Program Files\Java\jdk-17\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\SPB_DATA\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\SPB_DATA\bin;C:\Program Files (x86)\VMware\VMware Player\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client;C:\Program Files\Intel\iCLS Client;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files (x86)\AMD\ATI.ACE\Core-Static;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\MATLAB\R2023a\bin;C:\Program Files\Git\cmd;C:\Program Files\PuTTY;C:\Users\mik\AppData\Local\Programs\Python\Python311\Scripts;C:\Users\mik\AppData\Local\Programs\Python\Python311;C:\Users\mik\AppData\Local\Microsoft\WindowsApps;C:\Users\mik\AppData\Roaming\Python\Python311\Scripts;C:\users\mik\appdata\roaming\python\python311\site-packages;C:\users\mik\appdata\local\programs\python\python311\lib\site-packages;C:\Users\mik\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.2.5\bin;C:\Users\mik\Downloads\protoc-22.2-win64\bin;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl;.
-2024-02-16 03:15:25,610 [myid:] - INFO  [main:o.a.z.Environment@98] - Server environment:java.io.tmpdir=C:\Users\mik\AppData\Local\Temp\
-2024-02-16 03:15:25,610 [myid:] - INFO  [main:o.a.z.Environment@98] - Server environment:java.compiler=<NA>
-2024-02-16 03:15:25,610 [myid:] - INFO  [main:o.a.z.Environment@98] - Server environment:os.name=Windows 10
-2024-02-16 03:15:25,610 [myid:] - INFO  [main:o.a.z.Environment@98] - Server environment:os.arch=amd64
-2024-02-16 03:15:25,611 [myid:] - INFO  [main:o.a.z.Environment@98] - Server environment:os.version=10.0
-2024-02-16 03:15:25,611 [myid:] - INFO  [main:o.a.z.Environment@98] - Server environment:user.name=mik
-2024-02-16 03:15:25,611 [myid:] - INFO  [main:o.a.z.Environment@98] - Server environment:user.home=C:\Users\mik
-2024-02-16 03:15:25,611 [myid:] - INFO  [main:o.a.z.Environment@98] - Server environment:user.dir=C:\Users\mik\Downloads\PDS-FT1-INT\apache-zookeeper-3.9.1-bin
-2024-02-16 03:15:25,611 [myid:] - INFO  [main:o.a.z.Environment@98] - Server environment:os.memory.free=111MB
-2024-02-16 03:15:25,611 [myid:] - INFO  [main:o.a.z.Environment@98] - Server environment:os.memory.max=1000MB
-2024-02-16 03:15:25,611 [myid:] - INFO  [main:o.a.z.Environment@98] - Server environment:os.memory.total=128MB
-2024-02-16 03:15:25,611 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@149] - zookeeper.enableEagerACLCheck = false
-2024-02-16 03:15:25,611 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@162] - zookeeper.digest.enabled = true
-2024-02-16 03:15:25,611 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@166] - zookeeper.closeSessionTxn.enabled = true
-2024-02-16 03:15:25,611 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@2251] - zookeeper.serializeLastProcessedZxid.enabled = true
-2024-02-16 03:15:25,612 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@1594] - zookeeper.flushDelay = 0 ms
-2024-02-16 03:15:25,612 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@1603] - zookeeper.maxWriteQueuePollTime = 0 ms
-2024-02-16 03:15:25,612 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@1612] - zookeeper.maxBatchSize=1000
-2024-02-16 03:15:25,612 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@287] - zookeeper.intBufferStartingSizeBytes = 1024
-2024-02-16 03:15:25,614 [myid:] - INFO  [main:o.a.z.s.BlueThrottle@141] - Weighed connection throttling is disabled
-2024-02-16 03:15:25,615 [myid:] - INFO  [main:o.a.z.s.AuthenticationHelper@66] - zookeeper.enforce.auth.enabled = false
-2024-02-16 03:15:25,616 [myid:] - INFO  [main:o.a.z.s.AuthenticationHelper@67] - zookeeper.enforce.auth.schemes = []
-2024-02-16 03:15:25,618 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@1406] - minSessionTimeout set to 4000 ms
-2024-02-16 03:15:25,619 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@1415] - maxSessionTimeout set to 40000 ms
-2024-02-16 03:15:25,621 [myid:] - INFO  [main:o.a.z.s.ResponseCache@45] - getData response cache size is initialized with value 400.
-2024-02-16 03:15:25,621 [myid:] - INFO  [main:o.a.z.s.ResponseCache@45] - getChildren response cache size is initialized with value 400.
-2024-02-16 03:15:25,623 [myid:] - INFO  [main:o.a.z.s.u.RequestPathMetricsCollector@109] - zookeeper.pathStats.slotCapacity = 60
-2024-02-16 03:15:25,623 [myid:] - INFO  [main:o.a.z.s.u.RequestPathMetricsCollector@110] - zookeeper.pathStats.slotDuration = 15
-2024-02-16 03:15:25,623 [myid:] - INFO  [main:o.a.z.s.u.RequestPathMetricsCollector@111] - zookeeper.pathStats.maxDepth = 6
-2024-02-16 03:15:25,623 [myid:] - INFO  [main:o.a.z.s.u.RequestPathMetricsCollector@112] - zookeeper.pathStats.initialDelay = 5
-2024-02-16 03:15:25,624 [myid:] - INFO  [main:o.a.z.s.u.RequestPathMetricsCollector@113] - zookeeper.pathStats.delay = 5
-2024-02-16 03:15:25,624 [myid:] - INFO  [main:o.a.z.s.u.RequestPathMetricsCollector@114] - zookeeper.pathStats.enabled = false
-2024-02-16 03:15:25,628 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@1631] - The max bytes for all large requests are set to 104857600
-2024-02-16 03:15:25,628 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@1645] - The large request threshold is set to -1
-2024-02-16 03:15:25,628 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@385] - Created server with tickTime 2000 ms minSessionTimeout 4000 ms maxSessionTimeout 40000 ms clientPortListenBacklog -1 datadir \var\lib\zookeeper\version-2 snapdir \var\lib\zookeeper\version-2
-2024-02-16 03:15:25,661 [myid:] - INFO  [main:o.e.j.u.l.Log@170] - Logging initialized @5121ms to org.eclipse.jetty.util.log.Slf4jLog
-2024-02-16 03:15:25,790 [myid:] - WARN  [main:o.e.j.s.h.ContextHandler@1662] - o.e.j.s.ServletContextHandler@1c7696c6{/,null,STOPPED} contextPath ends with /*
-2024-02-16 03:15:25,790 [myid:] - WARN  [main:o.e.j.s.h.ContextHandler@1673] - Empty contextPath
-2024-02-16 03:15:25,831 [myid:] - INFO  [main:o.e.j.s.Server@375] - jetty-9.4.52.v20230823; built: 2023-08-23T19:29:37.669Z; git: abdcda73818a1a2c705da276edb0bf6581e7997e; jvm 17.0.9+11-LTS-201
-2024-02-16 03:15:25,878 [myid:] - INFO  [main:o.e.j.s.s.DefaultSessionIdManager@334] - DefaultSessionIdManager workerName=node0
-2024-02-16 03:15:25,878 [myid:] - INFO  [main:o.e.j.s.s.DefaultSessionIdManager@339] - No SessionScavenger set, using defaults
-2024-02-16 03:15:25,881 [myid:] - INFO  [main:o.e.j.s.s.HouseKeeper@132] - node0 Scavenging every 660000ms
-2024-02-16 03:15:25,889 [myid:] - WARN  [main:o.e.j.s.ConstraintSecurityHandler@759] - ServletContext@o.e.j.s.ServletContextHandler@1c7696c6{/,null,STARTING} has uncovered http methods for path: /*
-2024-02-16 03:15:25,907 [myid:] - INFO  [main:o.e.j.s.h.ContextHandler@921] - Started o.e.j.s.ServletContextHandler@1c7696c6{/,null,AVAILABLE}
-2024-02-16 03:15:25,918 [myid:] - ERROR [main:o.a.z.s.ZooKeeperServerMain@86] - Unable to start AdminServer, exiting abnormally
-org.apache.zookeeper.server.admin.AdminServer$AdminServerException: Problem starting AdminServer on address 0.0.0.0, port 8080 and command URL /commands
-	at org.apache.zookeeper.server.admin.JettyAdminServer.start(JettyAdminServer.java:199)
-	at org.apache.zookeeper.server.ZooKeeperServerMain.runFromConfig(ZooKeeperServerMain.java:155)
-	at org.apache.zookeeper.server.ZooKeeperServerMain.initializeAndRun(ZooKeeperServerMain.java:113)
-	at org.apache.zookeeper.server.ZooKeeperServerMain.main(ZooKeeperServerMain.java:68)
-	at org.apache.zookeeper.server.quorum.QuorumPeerMain.initializeAndRun(QuorumPeerMain.java:141)
-	at org.apache.zookeeper.server.quorum.QuorumPeerMain.main(QuorumPeerMain.java:91)
-Caused by: java.io.IOException: Failed to bind to /0.0.0.0:8080
-	at org.eclipse.jetty.server.ServerConnector.openAcceptChannel(ServerConnector.java:349)
-	at org.eclipse.jetty.server.ServerConnector.open(ServerConnector.java:310)
-	at org.eclipse.jetty.server.AbstractNetworkConnector.doStart(AbstractNetworkConnector.java:80)
-	at org.eclipse.jetty.server.ServerConnector.doStart(ServerConnector.java:234)
-	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:73)
-	at org.eclipse.jetty.server.Server.doStart(Server.java:401)
-	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:73)
-	at org.apache.zookeeper.server.admin.JettyAdminServer.start(JettyAdminServer.java:190)
-	... 5 common frames omitted
-Caused by: java.net.BindException: Address already in use: bind
-	at java.base/sun.nio.ch.Net.bind0(Native Method)
-	at java.base/sun.nio.ch.Net.bind(Net.java:555)
-	at java.base/sun.nio.ch.ServerSocketChannelImpl.netBind(ServerSocketChannelImpl.java:337)
-	at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:294)
-	at java.base/sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:89)
-	at org.eclipse.jetty.server.ServerConnector.openAcceptChannel(ServerConnector.java:344)
-	... 12 common frames omitted
-Unable to start AdminServer, exiting abnormally
-2024-02-16 03:15:25,919 [myid:] - INFO  [main:o.a.z.a.ZKAuditProvider@42] - ZooKeeper audit is disabled.
-2024-02-16 03:15:25,922 [myid:] - ERROR [main:o.a.z.u.ServiceUtils@48] - Exiting JVM with code 4
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       2024-02-16 03:15:40,462 [myid:] - WARN  [NIOWorkerThread-13:o.a.z.s.NIOServerCnxn@390] - Close of session 0x100a44df2270006
+2024-02-20 11:27:45,282 [myid:] - INFO  [main:o.a.z.s.q.QuorumPeerConfig@177] - Reading configuration from: C:\\Users\\mik\\Downloads\\PDS-FT1-INT\\apache-zookeeper-3.9.1-bin\\conf\\zoo.cfg
+2024-02-20 11:27:45,288 [myid:] - WARN  [main:o.a.z.s.u.VerifyingFileFactory@65] - \var\lib\zookeeper is relative. Prepend .\ to indicate that you're sure!
+2024-02-20 11:27:45,289 [myid:] - INFO  [main:o.a.z.s.q.QuorumPeerConfig@440] - clientPortAddress is 0.0.0.0:2181
+2024-02-20 11:27:45,290 [myid:] - INFO  [main:o.a.z.s.q.QuorumPeerConfig@444] - secureClientPort is not set
+2024-02-20 11:27:45,290 [myid:] - INFO  [main:o.a.z.s.q.QuorumPeerConfig@460] - observerMasterPort is not set
+2024-02-20 11:27:45,290 [myid:] - INFO  [main:o.a.z.s.q.QuorumPeerConfig@477] - metricsProvider.className is org.apache.zookeeper.metrics.impl.DefaultMetricsProvider
+2024-02-20 11:27:45,294 [myid:] - INFO  [main:o.a.z.s.DatadirCleanupManager@78] - autopurge.snapRetainCount set to 3
+2024-02-20 11:27:45,294 [myid:] - INFO  [main:o.a.z.s.DatadirCleanupManager@79] - autopurge.purgeInterval set to 0
+2024-02-20 11:27:45,294 [myid:] - INFO  [main:o.a.z.s.DatadirCleanupManager@101] - Purge task is not scheduled.
+2024-02-20 11:27:45,294 [myid:] - WARN  [main:o.a.z.s.q.QuorumPeerMain@139] - Either no config or no quorum defined in config, running in standalone mode
+2024-02-20 11:27:45,296 [myid:] - INFO  [main:o.a.z.j.ManagedUtil@46] - Log4j 1.2 jmx support not found; jmx disabled.
+2024-02-20 11:27:45,296 [myid:] - INFO  [main:o.a.z.s.q.QuorumPeerConfig@177] - Reading configuration from: C:\\Users\\mik\\Downloads\\PDS-FT1-INT\\apache-zookeeper-3.9.1-bin\\conf\\zoo.cfg
+2024-02-20 11:27:45,297 [myid:] - WARN  [main:o.a.z.s.u.VerifyingFileFactory@65] - \var\lib\zookeeper is relative. Prepend .\ to indicate that you're sure!
+2024-02-20 11:27:45,297 [myid:] - INFO  [main:o.a.z.s.q.QuorumPeerConfig@440] - clientPortAddress is 0.0.0.0:2181
+2024-02-20 11:27:45,297 [myid:] - INFO  [main:o.a.z.s.q.QuorumPeerConfig@444] - secureClientPort is not set
+2024-02-20 11:27:45,297 [myid:] - INFO  [main:o.a.z.s.q.QuorumPeerConfig@460] - observerMasterPort is not set
+2024-02-20 11:27:45,297 [myid:] - INFO  [main:o.a.z.s.q.QuorumPeerConfig@477] - metricsProvider.className is org.apache.zookeeper.metrics.impl.DefaultMetricsProvider
+2024-02-20 11:27:45,297 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServerMain@123] - Starting server
+2024-02-20 11:27:45,309 [myid:] - INFO  [main:o.a.z.s.ServerMetrics@64] - ServerMetrics initialized with provider org.apache.zookeeper.metrics.impl.DefaultMetricsProvider@6989da5e
+2024-02-20 11:27:45,313 [myid:] - INFO  [main:o.a.z.s.a.DigestAuthenticationProvider@51] - ACL digest algorithm is: SHA1
+2024-02-20 11:27:45,313 [myid:] - INFO  [main:o.a.z.s.a.DigestAuthenticationProvider@65] - zookeeper.DigestAuthenticationProvider.enabled = true
+2024-02-20 11:27:45,315 [myid:] - INFO  [main:o.a.z.s.p.FileTxnSnapLog@124] - zookeeper.snapshot.trust.empty : false
+2024-02-20 11:27:45,324 [myid:] - INFO  [main:o.a.z.ZookeeperBanner@42] - 
+2024-02-20 11:27:45,324 [myid:] - INFO  [main:o.a.z.ZookeeperBanner@42] -   ______                  _                                          
+2024-02-20 11:27:45,324 [myid:] - INFO  [main:o.a.z.ZookeeperBanner@42] -  |___  /                 | |                                         
+2024-02-20 11:27:45,324 [myid:] - INFO  [main:o.a.z.ZookeeperBanner@42] -     / /    ___     ___   | | __   ___    ___   _ __     ___   _ __   
+2024-02-20 11:27:45,324 [myid:] - INFO  [main:o.a.z.ZookeeperBanner@42] -    / /    / _ \   / _ \  | |/ /  / _ \  / _ \ | '_ \   / _ \ | '__|
+2024-02-20 11:27:45,325 [myid:] - INFO  [main:o.a.z.ZookeeperBanner@42] -   / /__  | (_) | | (_) | |   <  |  __/ |  __/ | |_) | |  __/ | |    
+2024-02-20 11:27:45,325 [myid:] - INFO  [main:o.a.z.ZookeeperBanner@42] -  /_____|  \___/   \___/  |_|\_\  \___|  \___| | .__/   \___| |_|
+2024-02-20 11:27:45,325 [myid:] - INFO  [main:o.a.z.ZookeeperBanner@42] -                                               | |                     
+2024-02-20 11:27:45,325 [myid:] - INFO  [main:o.a.z.ZookeeperBanner@42] -                                               |_|                     
+2024-02-20 11:27:45,325 [myid:] - INFO  [main:o.a.z.ZookeeperBanner@42] - 
+2024-02-20 11:27:45,326 [myid:] - INFO  [main:o.a.z.Environment@98] - Server environment:zookeeper.version=3.9.1-1398af177833412e9ead6b9bb737dc9fd7418a45, built on 2023-10-04 09:54 UTC
+2024-02-20 11:27:45,326 [myid:] - INFO  [main:o.a.z.Environment@98] - Server environment:host.name=DESKTOP-0BMFF86
+2024-02-20 11:27:45,326 [myid:] - INFO  [main:o.a.z.Environment@98] - Server environment:java.version=17.0.9
+2024-02-20 11:27:45,327 [myid:] - INFO  [main:o.a.z.Environment@98] - Server environment:java.vendor=Oracle Corporation
+2024-02-20 11:27:45,327 [myid:] - INFO  [main:o.a.z.Environment@98] - Server environment:java.home=C:\Program Files\Java\jdk-17
+2024-02-20 11:27:45,327 [myid:] - INFO  [main:o.a.z.Environment@98] - Server environment:java.class.path=C:\\Users\\mik\\Downloads\\PDS-FT1-INT\\apache-zookeeper-3.9.1-bin\\zookeeper-metrics-providers\\zookeeper-prometheus-metrics\\target\\classes;C:\\Users\\mik\\Downloads\\PDS-FT1-INT\\apache-zookeeper-3.9.1-bin\\zookeeper-server\\target\\classes;C:\\Users\\mik\\Downloads\\PDS-FT1-INT\\apache-zookeeper-3.9.1-bin\\build\\classes;C:\\Users\\mik\\Downloads\\PDS-FT1-INT\\apache-zookeeper-3.9.1-bin\\zookeeper-metrics-providers\\zookeeper-prometheus-metrics\\target\\lib\\*.jar;C:\\Users\\mik\\Downloads\\PDS-FT1-INT\\apache-zookeeper-3.9.1-bin\\zookeeper-server\\target\\lib\\*.jar;C:\\Users\\mik\\Downloads\\PDS-FT1-INT\\apache-zookeeper-3.9.1-bin\\build\\lib\\*.jar;C:\\Users\\mik\\Downloads\\PDS-FT1-INT\\apache-zookeeper-3.9.1-bin\\lib\\zookeeper-prometheus-metrics-3.9.1.jar;C:\\Users\\mik\\Downloads\\PDS-FT1-INT\\apache-zookeeper-3.9.1-bin\\lib\\zookeeper-jute-3.9.1.jar;C:\\Users\\mik\\Downloads\\PDS-FT1-INT\\apache-zookeeper-3.9.1-bin\\lib\\zookeeper-3.9.1.jar;C:\\Users\\mik\\Downloads\\PDS-FT1-INT\\apache-zookeeper-3.9.1-bin\\lib\\snappy-java-1.1.10.5.jar;C:\\Users\\mik\\Downloads\\PDS-FT1-INT\\apache-zookeeper-3.9.1-bin\\lib\\slf4j-api-1.7.30.jar;C:\\Users\\mik\\Downloads\\PDS-FT1-INT\\apache-zookeeper-3.9.1-bin\\lib\\simpleclient_servlet-0.9.0.jar;C:\\Users\\mik\\Downloads\\PDS-FT1-INT\\apache-zookeeper-3.9.1-bin\\lib\\simpleclient_hotspot-0.9.0.jar;C:\\Users\\mik\\Downloads\\PDS-FT1-INT\\apache-zookeeper-3.9.1-bin\\lib\\simpleclient_common-0.9.0.jar;C:\\Users\\mik\\Downloads\\PDS-FT1-INT\\apache-zookeeper-3.9.1-bin\\lib\\simpleclient-0.9.0.jar;C:\\Users\\mik\\Downloads\\PDS-FT1-INT\\apache-zookeeper-3.9.1-bin\\lib\\netty-transport-native-unix-common-4.1.94.Final.jar;C:\\Users\\mik\\Downloads\\PDS-FT1-INT\\apache-zookeeper-3.9.1-bin\\lib\\netty-transport-native-epoll-4.1.94.Final-linux-x86_64.jar;C:\\Users\\mik\\Downloads\\PDS-FT1-INT\\apache-zookeeper-3.9.1-bin\\lib\\netty-transport-classes-epoll-4.1.94.Final.jar;C:\\Users\\mik\\Downloads\\PDS-FT1-INT\\apache-zookeeper-3.9.1-bin\\lib\\netty-transport-4.1.94.Final.jar;C:\\Users\\mik\\Downloads\\PDS-FT1-INT\\apache-zookeeper-3.9.1-bin\\lib\\netty-tcnative-classes-2.0.61.Final.jar;C:\\Users\\mik\\Downloads\\PDS-FT1-INT\\apache-zookeeper-3.9.1-bin\\lib\\netty-tcnative-boringssl-static-2.0.61.Final.jar;C:\\Users\\mik\\Downloads\\PDS-FT1-INT\\apache-zookeeper-3.9.1-bin\\lib\\netty-tcnative-boringssl-static-2.0.61.Final-windows-x86_64.jar;C:\\Users\\mik\\Downloads\\PDS-FT1-INT\\apache-zookeeper-3.9.1-bin\\lib\\netty-tcnative-boringssl-static-2.0.61.Final-osx-x86_64.jar;C:\\Users\\mik\\Downloads\\PDS-FT1-INT\\apache-zookeeper-3.9.1-bin\\lib\\netty-tcnative-boringssl-static-2.0.61.Final-osx-aarch_64.jar;C:\\Users\\mik\\Downloads\\PDS-FT1-INT\\apache-zookeeper-3.9.1-bin\\lib\\netty-tcnative-boringssl-static-2.0.61.Final-linux-x86_64.jar;C:\\Users\\mik\\Downloads\\PDS-FT1-INT\\apache-zookeeper-3.9.1-bin\\lib\\netty-tcnative-boringssl-static-2.0.61.Final-linux-aarch_64.jar;C:\\Users\\mik\\Downloads\\PDS-FT1-INT\\apache-zookeeper-3.9.1-bin\\lib\\netty-resolver-4.1.94.Final.jar;C:\\Users\\mik\\Downloads\\PDS-FT1-INT\\apache-zookeeper-3.9.1-bin\\lib\\netty-handler-4.1.94.Final.jar;C:\\Users\\mik\\Downloads\\PDS-FT1-INT\\apache-zookeeper-3.9.1-bin\\lib\\netty-common-4.1.94.Final.jar;C:\\Users\\mik\\Downloads\\PDS-FT1-INT\\apache-zookeeper-3.9.1-bin\\lib\\netty-codec-4.1.94.Final.jar;C:\\Users\\mik\\Downloads\\PDS-FT1-INT\\apache-zookeeper-3.9.1-bin\\lib\\netty-buffer-4.1.94.Final.jar;C:\\Users\\mik\\Downloads\\PDS-FT1-INT\\apache-zookeeper-3.9.1-bin\\lib\\metrics-core-4.1.12.1.jar;C:\\Users\\mik\\Downloads\\PDS-FT1-INT\\apache-zookeeper-3.9.1-bin\\lib\\logback-core-1.2.10.jar;C:\\Users\\mik\\Downloads\\PDS-FT1-INT\\apache-zookeeper-3.9.1-bin\\lib\\logback-classic-1.2.10.jar;C:\\Users\\mik\\Downloads\\PDS-FT1-INT\\apache-zookeeper-3.9.1-bin\\lib\\jline-2.14.6.jar;C:\\Users\\mik\\Downloads\\PDS-FT1-INT\\apache-zookeeper-3.9.1-bin\\lib\\jetty-util-ajax-9.4.52.v20230823.jar;C:\\Users\\mik\\Downloads\\PDS-FT1-INT\\apache-zookeeper-3.9.1-bin\\lib\\jetty-util-9.4.52.v20230823.jar;C:\\Users\\mik\\Downloads\\PDS-FT1-INT\\apache-zookeeper-3.9.1-bin\\lib\\jetty-servlet-9.4.52.v20230823.jar;C:\\Users\\mik\\Downloads\\PDS-FT1-INT\\apache-zookeeper-3.9.1-bin\\lib\\jetty-server-9.4.52.v20230823.jar;C:\\Users\\mik\\Downloads\\PDS-FT1-INT\\apache-zookeeper-3.9.1-bin\\lib\\jetty-security-9.4.52.v20230823.jar;C:\\Users\\mik\\Downloads\\PDS-FT1-INT\\apache-zookeeper-3.9.1-bin\\lib\\jetty-io-9.4.52.v20230823.jar;C:\\Users\\mik\\Downloads\\PDS-FT1-INT\\apache-zookeeper-3.9.1-bin\\lib\\jetty-http-9.4.52.v20230823.jar;C:\\Users\\mik\\Downloads\\PDS-FT1-INT\\apache-zookeeper-3.9.1-bin\\lib\\javax.servlet-api-3.1.0.jar;C:\\Users\\mik\\Downloads\\PDS-FT1-INT\\apache-zookeeper-3.9.1-bin\\lib\\jackson-databind-2.15.2.jar;C:\\Users\\mik\\Downloads\\PDS-FT1-INT\\apache-zookeeper-3.9.1-bin\\lib\\jackson-core-2.15.2.jar;C:\\Users\\mik\\Downloads\\PDS-FT1-INT\\apache-zookeeper-3.9.1-bin\\lib\\jackson-annotations-2.15.2.jar;C:\\Users\\mik\\Downloads\\PDS-FT1-INT\\apache-zookeeper-3.9.1-bin\\lib\\commons-io-2.11.0.jar;C:\\Users\\mik\\Downloads\\PDS-FT1-INT\\apache-zookeeper-3.9.1-bin\\lib\\commons-cli-1.5.0.jar;C:\\Users\\mik\\Downloads\\PDS-FT1-INT\\apache-zookeeper-3.9.1-bin\\lib\\audience-annotations-0.12.0.jar;C:\\Users\\mik\\Downloads\\PDS-FT1-INT\\apache-zookeeper-3.9.1-bin\\zookeeper-*.jar;C:\\Users\\mik\\Downloads\\PDS-FT1-INT\\apache-zookeeper-3.9.1-bin\\zookeeper-server\\src\\main\\resources\\lib\\*.jar;C:\\Users\\mik\\Downloads\\PDS-FT1-INT\\apache-zookeeper-3.9.1-bin\\conf;.
+2024-02-20 11:27:45,327 [myid:] - INFO  [main:o.a.z.Environment@98] - Server environment:java.library.path=C:\Program Files\Java\jdk-17\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\SPB_DATA\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\SPB_DATA\bin;C:\Program Files (x86)\VMware\VMware Player\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client;C:\Program Files\Intel\iCLS Client;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files (x86)\AMD\ATI.ACE\Core-Static;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\MATLAB\R2023a\bin;C:\Program Files\Git\cmd;C:\Program Files\PuTTY;C:\Users\mik\AppData\Local\Programs\Python\Python311\Scripts;C:\Users\mik\AppData\Local\Programs\Python\Python311;C:\Users\mik\AppData\Local\Microsoft\WindowsApps;C:\Users\mik\AppData\Roaming\Python\Python311\Scripts;C:\users\mik\appdata\roaming\python\python311\site-packages;C:\users\mik\appdata\local\programs\python\python311\lib\site-packages;C:\Users\mik\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.2.5\bin;C:\Users\mik\Downloads\protoc-22.2-win64\bin;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl;.
+2024-02-20 11:27:45,327 [myid:] - INFO  [main:o.a.z.Environment@98] - Server environment:java.io.tmpdir=C:\Users\mik\AppData\Local\Temp\
+2024-02-20 11:27:45,327 [myid:] - INFO  [main:o.a.z.Environment@98] - Server environment:java.compiler=<NA>
+2024-02-20 11:27:45,327 [myid:] - INFO  [main:o.a.z.Environment@98] - Server environment:os.name=Windows 10
+2024-02-20 11:27:45,327 [myid:] - INFO  [main:o.a.z.Environment@98] - Server environment:os.arch=amd64
+2024-02-20 11:27:45,327 [myid:] - INFO  [main:o.a.z.Environment@98] - Server environment:os.version=10.0
+2024-02-20 11:27:45,327 [myid:] - INFO  [main:o.a.z.Environment@98] - Server environment:user.name=mik
+2024-02-20 11:27:45,327 [myid:] - INFO  [main:o.a.z.Environment@98] - Server environment:user.home=C:\Users\mik
+2024-02-20 11:27:45,327 [myid:] - INFO  [main:o.a.z.Environment@98] - Server environment:user.dir=C:\Users\mik\Downloads\PDS-FT1-INT\apache-zookeeper-3.9.1-bin
+2024-02-20 11:27:45,327 [myid:] - INFO  [main:o.a.z.Environment@98] - Server environment:os.memory.free=111MB
+2024-02-20 11:27:45,328 [myid:] - INFO  [main:o.a.z.Environment@98] - Server environment:os.memory.max=1000MB
+2024-02-20 11:27:45,328 [myid:] - INFO  [main:o.a.z.Environment@98] - Server environment:os.memory.total=128MB
+2024-02-20 11:27:45,328 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@149] - zookeeper.enableEagerACLCheck = false
+2024-02-20 11:27:45,328 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@162] - zookeeper.digest.enabled = true
+2024-02-20 11:27:45,328 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@166] - zookeeper.closeSessionTxn.enabled = true
+2024-02-20 11:27:45,328 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@2251] - zookeeper.serializeLastProcessedZxid.enabled = true
+2024-02-20 11:27:45,328 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@1594] - zookeeper.flushDelay = 0 ms
+2024-02-20 11:27:45,328 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@1603] - zookeeper.maxWriteQueuePollTime = 0 ms
+2024-02-20 11:27:45,328 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@1612] - zookeeper.maxBatchSize=1000
+2024-02-20 11:27:45,328 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@287] - zookeeper.intBufferStartingSizeBytes = 1024
+2024-02-20 11:27:45,329 [myid:] - INFO  [main:o.a.z.s.BlueThrottle@141] - Weighed connection throttling is disabled
+2024-02-20 11:27:45,330 [myid:] - INFO  [main:o.a.z.s.AuthenticationHelper@66] - zookeeper.enforce.auth.enabled = false
+2024-02-20 11:27:45,330 [myid:] - INFO  [main:o.a.z.s.AuthenticationHelper@67] - zookeeper.enforce.auth.schemes = []
+2024-02-20 11:27:45,331 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@1406] - minSessionTimeout set to 4000 ms
+2024-02-20 11:27:45,331 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@1415] - maxSessionTimeout set to 40000 ms
+2024-02-20 11:27:45,332 [myid:] - INFO  [main:o.a.z.s.ResponseCache@45] - getData response cache size is initialized with value 400.
+2024-02-20 11:27:45,332 [myid:] - INFO  [main:o.a.z.s.ResponseCache@45] - getChildren response cache size is initialized with value 400.
+2024-02-20 11:27:45,333 [myid:] - INFO  [main:o.a.z.s.u.RequestPathMetricsCollector@109] - zookeeper.pathStats.slotCapacity = 60
+2024-02-20 11:27:45,333 [myid:] - INFO  [main:o.a.z.s.u.RequestPathMetricsCollector@110] - zookeeper.pathStats.slotDuration = 15
+2024-02-20 11:27:45,333 [myid:] - INFO  [main:o.a.z.s.u.RequestPathMetricsCollector@111] - zookeeper.pathStats.maxDepth = 6
+2024-02-20 11:27:45,333 [myid:] - INFO  [main:o.a.z.s.u.RequestPathMetricsCollector@112] - zookeeper.pathStats.initialDelay = 5
+2024-02-20 11:27:45,334 [myid:] - INFO  [main:o.a.z.s.u.RequestPathMetricsCollector@113] - zookeeper.pathStats.delay = 5
+2024-02-20 11:27:45,334 [myid:] - INFO  [main:o.a.z.s.u.RequestPathMetricsCollector@114] - zookeeper.pathStats.enabled = false
+2024-02-20 11:27:45,336 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@1631] - The max bytes for all large requests are set to 104857600
+2024-02-20 11:27:45,337 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@1645] - The large request threshold is set to -1
+2024-02-20 11:27:45,337 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@385] - Created server with tickTime 2000 ms minSessionTimeout 4000 ms maxSessionTimeout 40000 ms clientPortListenBacklog -1 datadir \var\lib\zookeeper\version-2 snapdir \var\lib\zookeeper\version-2
+2024-02-20 11:27:45,360 [myid:] - INFO  [main:o.e.j.u.l.Log@170] - Logging initialized @747ms to org.eclipse.jetty.util.log.Slf4jLog
+2024-02-20 11:27:45,476 [myid:] - WARN  [main:o.e.j.s.h.ContextHandler@1662] - o.e.j.s.ServletContextHandler@1c7696c6{/,null,STOPPED} contextPath ends with /*
+2024-02-20 11:27:45,476 [myid:] - WARN  [main:o.e.j.s.h.ContextHandler@1673] - Empty contextPath
+2024-02-20 11:27:45,508 [myid:] - INFO  [main:o.e.j.s.Server@375] - jetty-9.4.52.v20230823; built: 2023-08-23T19:29:37.669Z; git: abdcda73818a1a2c705da276edb0bf6581e7997e; jvm 17.0.9+11-LTS-201
+2024-02-20 11:27:45,543 [myid:] - INFO  [main:o.e.j.s.s.DefaultSessionIdManager@334] - DefaultSessionIdManager workerName=node0
+2024-02-20 11:27:45,543 [myid:] - INFO  [main:o.e.j.s.s.DefaultSessionIdManager@339] - No SessionScavenger set, using defaults
+2024-02-20 11:27:45,546 [myid:] - INFO  [main:o.e.j.s.s.HouseKeeper@132] - node0 Scavenging every 600000ms
+2024-02-20 11:27:45,551 [myid:] - WARN  [main:o.e.j.s.ConstraintSecurityHandler@759] - ServletContext@o.e.j.s.ServletContextHandler@1c7696c6{/,null,STARTING} has uncovered http methods for path: /*
+2024-02-20 11:27:45,565 [myid:] - INFO  [main:o.e.j.s.h.ContextHandler@921] - Started o.e.j.s.ServletContextHandler@1c7696c6{/,null,AVAILABLE}
+2024-02-20 11:27:45,629 [myid:] - INFO  [main:o.e.j.s.AbstractConnector@333] - Started ServerConnector@5acf93bb{HTTP/1.1, (http/1.1)}{0.0.0.0:8080}
+2024-02-20 11:27:45,630 [myid:] - INFO  [main:o.e.j.s.Server@415] - Started @1016ms
+2024-02-20 11:27:45,630 [myid:] - INFO  [main:o.a.z.s.a.JettyAdminServer@201] - Started AdminServer on address 0.0.0.0, port 8080 and command URL /commands
+2024-02-20 11:27:45,634 [myid:] - INFO  [main:o.a.z.s.ServerCnxnFactory@169] - Using org.apache.zookeeper.server.NIOServerCnxnFactory as server connection factory
+2024-02-20 11:27:45,636 [myid:] - WARN  [main:o.a.z.s.ServerCnxnFactory@309] - maxCnxns is not configured, using default value 0.
+2024-02-20 11:27:45,637 [myid:] - INFO  [main:o.a.z.s.NIOServerCnxnFactory@652] - Configuring NIO connection handler with 10s sessionless connection timeout, 2 selector thread(s), 16 worker threads, and 64 kB direct buffers.
+2024-02-20 11:27:45,641 [myid:] - INFO  [main:o.a.z.s.NIOServerCnxnFactory@660] - binding to port 0.0.0.0/0.0.0.0:2181
+2024-02-20 11:27:45,653 [myid:] - INFO  [main:o.a.z.s.w.WatchManagerFactory@42] - Using org.apache.zookeeper.server.watch.WatchManager as watch manager
+2024-02-20 11:27:45,654 [myid:] - INFO  [main:o.a.z.s.w.WatchManagerFactory@42] - Using org.apache.zookeeper.server.watch.WatchManager as watch manager
+2024-02-20 11:27:45,655 [myid:] - INFO  [main:o.a.z.s.ZKDatabase@135] - zookeeper.snapshotSizeFactor = 0.33
+2024-02-20 11:27:45,655 [myid:] - INFO  [main:o.a.z.s.ZKDatabase@155] - zookeeper.commitLogCount=500
+2024-02-20 11:27:45,658 [myid:] - INFO  [main:o.a.z.s.p.SnapStream@61] - zookeeper.snapshot.compression.method = CHECKED
+2024-02-20 11:27:45,669 [myid:] - INFO  [main:o.a.z.s.p.FileSnap@86] - Reading snapshot \var\lib\zookeeper\version-2\snapshot.9
+2024-02-20 11:27:45,673 [myid:] - INFO  [main:o.a.z.s.DataTree@1694] - The digest in the snapshot has digest version of 2, with zxid as 0x9, and digest value as 6238374033
+2024-02-20 11:27:45,694 [myid:] - INFO  [main:o.a.z.a.ZKAuditProvider@42] - ZooKeeper audit is disabled.
+2024-02-20 11:27:45,721 [myid:] - INFO  [main:o.a.z.s.p.FileTxnSnapLog@372] - 238 txns loaded in 31 ms
+2024-02-20 11:27:45,721 [myid:] - INFO  [main:o.a.z.s.ZKDatabase@292] - Snapshot loaded in 67 ms, highest zxid is 0xf7, digest is 7305358688
+2024-02-20 11:27:45,723 [myid:] - INFO  [main:o.a.z.s.p.FileTxnSnapLog@480] - Snapshotting: 0xf7 to \var\lib\zookeeper\version-2\snapshot.f7
+2024-02-20 11:27:45,724 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@589] - Snapshot taken in 1 ms
+2024-02-20 11:27:45,732 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::o.a.z.s.PrepRequestProcessor@138] - PrepRequestProcessor (sid:0) started, reconfigEnabled=false
+2024-02-20 11:27:45,732 [myid:] - INFO  [main:o.a.z.s.RequestThrottler@75] - zookeeper.request_throttler.shutdownTimeout = 10000 ms
+2024-02-20 11:27:45,749 [myid:] - INFO  [main:o.a.z.s.ContainerManager@83] - Using checkIntervalMs=60000 maxPerMinute=10000 maxNeverUsedIntervalMs=0
+2024-02-20 11:27:46,137 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@284] - Creating new log file: log.f8
+2024-02-20 11:27:50,408 [myid:] - INFO  [SessionTracker:o.a.z.s.ZooKeeperServer@730] - Expiring session 0x100a44df2270054, timeout of 4000ms exceeded
+2024-02-20 11:39:15,103 [myid:] - WARN  [NIOWorkerThread-11:o.a.z.s.NIOServerCnxn@390] - Close of session 0x100018dd1160001
 java.net.SocketException: Connection reset
 	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
 	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
@@ -120,8 +115,8 @@ java.net.SocketException: Connection reset
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:842)
-2024-02-16 03:15:44,880 [myid:] - INFO  [SessionTracker:o.a.z.s.ZooKeeperServer@730] - Expiring session 0x100a44df2270006, timeout of 4000ms exceeded
-2024-02-16 03:31:09,394 [myid:] - WARN  [NIOWorkerThread-13:o.a.z.s.NIOServerCnxn@390] - Close of session 0x100a44df2270000
+2024-02-20 11:39:18,410 [myid:] - INFO  [SessionTracker:o.a.z.s.ZooKeeperServer@730] - Expiring session 0x100018dd1160001, timeout of 4000ms exceeded
+2024-02-20 11:39:30,974 [myid:] - WARN  [NIOWorkerThread-4:o.a.z.s.NIOServerCnxn@390] - Close of session 0x100018dd1160000
 java.net.SocketException: Connection reset
 	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
 	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
@@ -131,8 +126,8 @@ java.net.SocketException: Connection reset
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:842)
-2024-02-16 03:31:12,879 [myid:] - INFO  [SessionTracker:o.a.z.s.ZooKeeperServer@730] - Expiring session 0x100a44df2270000, timeout of 4000ms exceeded
-2024-02-16 03:53:50,736 [myid:] - WARN  [NIOWorkerThread-5:o.a.z.s.NIOServerCnxn@390] - Close of session 0x100a44df2270008
+2024-02-20 11:39:36,409 [myid:] - INFO  [SessionTracker:o.a.z.s.ZooKeeperServer@730] - Expiring session 0x100018dd1160000, timeout of 4000ms exceeded
+2024-02-20 11:42:32,020 [myid:] - WARN  [NIOWorkerThread-10:o.a.z.s.NIOServerCnxn@390] - Close of session 0x100018dd1160004
 java.net.SocketException: Connection reset
 	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
 	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
@@ -142,8 +137,8 @@ java.net.SocketException: Connection reset
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:842)
-2024-02-16 03:53:54,879 [myid:] - INFO  [SessionTracker:o.a.z.s.ZooKeeperServer@730] - Expiring session 0x100a44df2270008, timeout of 4000ms exceeded
-2024-02-16 03:54:46,716 [myid:] - WARN  [NIOWorkerThread-10:o.a.z.s.NIOServerCnxn@390] - Close of session 0x100a44df2270009
+2024-02-20 11:42:36,408 [myid:] - INFO  [SessionTracker:o.a.z.s.ZooKeeperServer@730] - Expiring session 0x100018dd1160004, timeout of 4000ms exceeded
+2024-02-20 12:58:49,636 [myid:] - WARN  [NIOWorkerThread-11:o.a.z.s.NIOServerCnxn@390] - Close of session 0x100018dd1160002
 java.net.SocketException: Connection reset
 	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
 	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
@@ -153,8 +148,8 @@ java.net.SocketException: Connection reset
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:842)
-2024-02-16 03:54:50,879 [myid:] - INFO  [SessionTracker:o.a.z.s.ZooKeeperServer@730] - Expiring session 0x100a44df2270009, timeout of 4000ms exceeded
-2024-02-16 04:03:25,029 [myid:] - WARN  [NIOWorkerThread-6:o.a.z.s.NIOServerCnxn@390] - Close of session 0x100a44df2270007
+2024-02-20 12:58:54,408 [myid:] - INFO  [SessionTracker:o.a.z.s.ZooKeeperServer@730] - Expiring session 0x100018dd1160002, timeout of 4000ms exceeded
+2024-02-20 13:03:04,663 [myid:] - WARN  [NIOWorkerThread-2:o.a.z.s.NIOServerCnxn@390] - Close of session 0x100018dd1160006
 java.net.SocketException: Connection reset
 	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
 	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
@@ -164,8 +159,8 @@ java.net.SocketException: Connection reset
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:842)
-2024-02-16 04:03:28,880 [myid:] - INFO  [SessionTracker:o.a.z.s.ZooKeeperServer@730] - Expiring session 0x100a44df2270007, timeout of 4000ms exceeded
-2024-02-16 04:28:39,880 [myid:] - WARN  [NIOWorkerThread-6:o.a.z.s.NIOServerCnxn@390] - Close of session 0x100a44df227000b
+2024-02-20 13:03:08,409 [myid:] - INFO  [SessionTracker:o.a.z.s.ZooKeeperServer@730] - Expiring session 0x100018dd1160006, timeout of 4000ms exceeded
+2024-02-20 13:08:30,260 [myid:] - WARN  [NIOWorkerThread-15:o.a.z.s.NIOServerCnxn@390] - Close of session 0x100018dd1160005
 java.net.SocketException: Connection reset
 	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
 	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
@@ -175,8 +170,8 @@ java.net.SocketException: Connection reset
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:842)
-2024-02-16 04:28:44,879 [myid:] - INFO  [SessionTracker:o.a.z.s.ZooKeeperServer@730] - Expiring session 0x100a44df227000b, timeout of 4000ms exceeded
-2024-02-16 04:29:16,734 [myid:] - WARN  [NIOWorkerThread-4:o.a.z.s.NIOServerCnxn@390] - Close of session 0x100a44df227000a
+2024-02-20 13:08:34,408 [myid:] - INFO  [SessionTracker:o.a.z.s.ZooKeeperServer@730] - Expiring session 0x100018dd1160005, timeout of 4000ms exceeded
+2024-02-20 13:08:41,653 [myid:] - WARN  [NIOWorkerThread-7:o.a.z.s.NIOServerCnxn@390] - Close of session 0x100018dd1160003
 java.net.SocketException: Connection reset
 	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
 	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
@@ -186,8 +181,8 @@ java.net.SocketException: Connection reset
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:842)
-2024-02-16 04:29:20,879 [myid:] - INFO  [SessionTracker:o.a.z.s.ZooKeeperServer@730] - Expiring session 0x100a44df227000a, timeout of 4000ms exceeded
-2024-02-16 04:36:14,343 [myid:] - WARN  [NIOWorkerThread-9:o.a.z.s.NIOServerCnxn@390] - Close of session 0x100a44df227000d
+2024-02-20 13:08:46,408 [myid:] - INFO  [SessionTracker:o.a.z.s.ZooKeeperServer@730] - Expiring session 0x100018dd1160003, timeout of 4000ms exceeded
+2024-02-20 13:19:51,697 [myid:] - WARN  [NIOWorkerThread-2:o.a.z.s.NIOServerCnxn@390] - Close of session 0x100018dd1160007
 java.net.SocketException: Connection reset
 	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
 	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
@@ -197,8 +192,10 @@ java.net.SocketException: Connection reset
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:842)
-2024-02-16 04:36:18,878 [myid:] - INFO  [SessionTracker:o.a.z.s.ZooKeeperServer@730] - Expiring session 0x100a44df227000d, timeout of 4000ms exceeded
-2024-02-16 04:44:49,392 [myid:] - WARN  [NIOWorkerThread-14:o.a.z.s.NIOServerCnxn@390] - Close of session 0x100a44df227000c
+2024-02-20 13:19:56,409 [myid:] - INFO  [SessionTracker:o.a.z.s.ZooKeeperServer@730] - Expiring session 0x100018dd1160007, timeout of 4000ms exceeded
+2024-02-20 13:20:30,408 [myid:] - INFO  [SessionTracker:o.a.z.s.ZooKeeperServer@730] - Expiring session 0x100018dd1160008, timeout of 4000ms exceeded
+2024-02-20 13:21:19,679 [myid:] - INFO  [NIOWorkerThread-9:o.a.z.s.ZooKeeperServer@1188] - Invalid session 0x100018dd1160008 for client /127.0.0.1:56251, probably expired
+2024-02-20 13:23:20,552 [myid:] - WARN  [NIOWorkerThread-5:o.a.z.s.NIOServerCnxn@390] - Close of session 0x100018dd1160009
 java.net.SocketException: Connection reset
 	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
 	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
@@ -208,8 +205,8 @@ java.net.SocketException: Connection reset
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:842)
-2024-02-16 04:44:52,879 [myid:] - INFO  [SessionTracker:o.a.z.s.ZooKeeperServer@730] - Expiring session 0x100a44df227000c, timeout of 4000ms exceeded
-2024-02-16 04:48:28,292 [myid:] - WARN  [NIOWorkerThread-12:o.a.z.s.NIOServerCnxn@390] - Close of session 0x100a44df227000f
+2024-02-20 13:23:24,409 [myid:] - INFO  [SessionTracker:o.a.z.s.ZooKeeperServer@730] - Expiring session 0x100018dd1160009, timeout of 4000ms exceeded
+2024-02-20 13:24:02,003 [myid:] - WARN  [NIOWorkerThread-16:o.a.z.s.NIOServerCnxn@390] - Close of session 0x100018dd116000a
 java.net.SocketException: Connection reset
 	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
 	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
@@ -219,8 +216,8 @@ java.net.SocketException: Connection reset
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:842)
-2024-02-16 04:48:32,879 [myid:] - INFO  [SessionTracker:o.a.z.s.ZooKeeperServer@730] - Expiring session 0x100a44df227000f, timeout of 4000ms exceeded
-2024-02-16 04:48:45,064 [myid:] - WARN  [NIOWorkerThread-12:o.a.z.s.NIOServerCnxn@390] - Close of session 0x100a44df227000e
+2024-02-20 13:24:06,409 [myid:] - INFO  [SessionTracker:o.a.z.s.ZooKeeperServer@730] - Expiring session 0x100018dd116000a, timeout of 4000ms exceeded
+2024-02-20 13:24:49,437 [myid:] - WARN  [NIOWorkerThread-7:o.a.z.s.NIOServerCnxn@390] - Close of session 0x100018dd116000b
 java.net.SocketException: Connection reset
 	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
 	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
@@ -230,8 +227,8 @@ java.net.SocketException: Connection reset
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:842)
-2024-02-16 04:48:50,879 [myid:] - INFO  [SessionTracker:o.a.z.s.ZooKeeperServer@730] - Expiring session 0x100a44df227000e, timeout of 4000ms exceeded
-2024-02-16 05:10:45,167 [myid:] - WARN  [NIOWorkerThread-9:o.a.z.s.NIOServerCnxn@390] - Close of session 0x100a44df2270011
+2024-02-20 13:24:52,409 [myid:] - INFO  [SessionTracker:o.a.z.s.ZooKeeperServer@730] - Expiring session 0x100018dd116000b, timeout of 4000ms exceeded
+2024-02-20 13:26:01,704 [myid:] - WARN  [NIOWorkerThread-6:o.a.z.s.NIOServerCnxn@390] - Close of session 0x100018dd116000d
 java.net.SocketException: Connection reset
 	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
 	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
@@ -241,8 +238,8 @@ java.net.SocketException: Connection reset
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:842)
-2024-02-16 05:10:48,879 [myid:] - INFO  [SessionTracker:o.a.z.s.ZooKeeperServer@730] - Expiring session 0x100a44df2270011, timeout of 4000ms exceeded
-2024-02-16 05:11:00,270 [myid:] - WARN  [NIOWorkerThread-5:o.a.z.s.NIOServerCnxn@390] - Close of session 0x100a44df2270010
+2024-02-20 13:26:06,409 [myid:] - INFO  [SessionTracker:o.a.z.s.ZooKeeperServer@730] - Expiring session 0x100018dd116000d, timeout of 4000ms exceeded
+2024-02-20 13:26:44,745 [myid:] - WARN  [NIOWorkerThread-9:o.a.z.s.NIOServerCnxn@390] - Close of session 0x100018dd116000c
 java.net.SocketException: Connection reset
 	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
 	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
@@ -252,8 +249,11 @@ java.net.SocketException: Connection reset
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:842)
-2024-02-16 05:11:04,891 [myid:] - INFO  [SessionTracker:o.a.z.s.ZooKeeperServer@730] - Expiring session 0x100a44df2270010, timeout of 4000ms exceeded
-2024-02-16 05:15:52,396 [myid:] - WARN  [NIOWorkerThread-8:o.a.z.s.NIOServerCnxn@390] - Close of session 0x100a44df2270012
+2024-02-20 13:26:50,409 [myid:] - INFO  [SessionTracker:o.a.z.s.ZooKeeperServer@730] - Expiring session 0x100018dd116000c, timeout of 4000ms exceeded
+2024-02-20 13:27:10,227 [myid:] - INFO  [NIOWorkerThread-16:o.a.z.s.NIOServerCnxn@339] - Unable to read additional data from client, it probably closed the socket: address = /127.0.0.1:56327, session = 0x100018dd116000e
+2024-02-20 13:27:10,409 [myid:] - INFO  [SessionTracker:o.a.z.s.ZooKeeperServer@730] - Expiring session 0x100018dd116000e, timeout of 4000ms exceeded
+2024-02-20 13:29:32,498 [myid:] - INFO  [NIOWorkerThread-1:o.a.z.s.ZooKeeperServer@1188] - Invalid session 0x100018dd116000e for client /127.0.0.1:56339, probably expired
+2024-02-20 13:29:44,636 [myid:] - WARN  [NIOWorkerThread-9:o.a.z.s.NIOServerCnxn@390] - Close of session 0x100018dd116000f
 java.net.SocketException: Connection reset
 	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
 	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
@@ -263,8 +263,8 @@ java.net.SocketException: Connection reset
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:842)
-2024-02-16 05:15:56,879 [myid:] - INFO  [SessionTracker:o.a.z.s.ZooKeeperServer@730] - Expiring session 0x100a44df2270012, timeout of 4000ms exceeded
-2024-02-16 06:13:22,370 [myid:] - WARN  [NIOWorkerThread-12:o.a.z.s.NIOServerCnxn@390] - Close of session 0x100a44df2270013
+2024-02-20 13:29:48,409 [myid:] - INFO  [SessionTracker:o.a.z.s.ZooKeeperServer@730] - Expiring session 0x100018dd116000f, timeout of 4000ms exceeded
+2024-02-20 13:31:00,546 [myid:] - WARN  [NIOWorkerThread-10:o.a.z.s.NIOServerCnxn@390] - Close of session 0x100018dd1160011
 java.net.SocketException: Connection reset
 	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
 	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
@@ -274,8 +274,8 @@ java.net.SocketException: Connection reset
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:842)
-2024-02-16 06:13:26,882 [myid:] - INFO  [SessionTracker:o.a.z.s.ZooKeeperServer@730] - Expiring session 0x100a44df2270013, timeout of 4000ms exceeded
-2024-02-16 06:16:16,342 [myid:] - WARN  [NIOWorkerThread-3:o.a.z.s.NIOServerCnxn@390] - Close of session 0x100a44df2270014
+2024-02-20 13:31:04,408 [myid:] - INFO  [SessionTracker:o.a.z.s.ZooKeeperServer@730] - Expiring session 0x100018dd1160011, timeout of 4000ms exceeded
+2024-02-20 13:31:24,051 [myid:] - WARN  [NIOWorkerThread-13:o.a.z.s.NIOServerCnxn@390] - Close of session 0x100018dd1160010
 java.net.SocketException: Connection reset
 	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
 	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
@@ -285,8 +285,8 @@ java.net.SocketException: Connection reset
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:842)
-2024-02-16 06:16:20,879 [myid:] - INFO  [SessionTracker:o.a.z.s.ZooKeeperServer@730] - Expiring session 0x100a44df2270014, timeout of 4000ms exceeded
-2024-02-16 06:22:23,240 [myid:] - WARN  [NIOWorkerThread-5:o.a.z.s.NIOServerCnxn@390] - Close of session 0x100a44df2270015
+2024-02-20 13:31:28,409 [myid:] - INFO  [SessionTracker:o.a.z.s.ZooKeeperServer@730] - Expiring session 0x100018dd1160010, timeout of 4000ms exceeded
+2024-02-20 13:38:44,354 [myid:] - WARN  [NIOWorkerThread-13:o.a.z.s.NIOServerCnxn@390] - Close of session 0x100018dd1160013
 java.net.SocketException: Connection reset
 	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
 	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
@@ -296,8 +296,8 @@ java.net.SocketException: Connection reset
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:842)
-2024-02-16 06:22:26,879 [myid:] - INFO  [SessionTracker:o.a.z.s.ZooKeeperServer@730] - Expiring session 0x100a44df2270015, timeout of 4000ms exceeded
-2024-02-16 06:22:45,507 [myid:] - WARN  [NIOWorkerThread-11:o.a.z.s.NIOServerCnxn@390] - Close of session 0x100a44df2270016
+2024-02-20 13:38:48,408 [myid:] - INFO  [SessionTracker:o.a.z.s.ZooKeeperServer@730] - Expiring session 0x100018dd1160013, timeout of 4000ms exceeded
+2024-02-20 13:38:51,666 [myid:] - WARN  [NIOWorkerThread-13:o.a.z.s.NIOServerCnxn@390] - Close of session 0x100018dd1160012
 java.net.SocketException: Connection reset
 	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
 	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
@@ -307,11 +307,8 @@ java.net.SocketException: Connection reset
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:842)
-2024-02-16 06:22:50,881 [myid:] - INFO  [SessionTracker:o.a.z.s.ZooKeeperServer@730] - Expiring session 0x100a44df2270016, timeout of 4000ms exceeded
-2024-02-16 06:52:31,452 [myid:] - INFO  [SessionTracker:o.a.z.s.ZooKeeperServer@730] - Expiring session 0x100a44df2270017, timeout of 4000ms exceeded
-2024-02-16 06:52:32,266 [myid:] - INFO  [NIOWorkerThread-12:o.a.z.s.NIOServerCnxn@339] - Unable to read additional data from client, it probably closed the socket: address = /[0:0:0:0:0:0:0:1]:63856, session = 0x100a44df2270017
-2024-02-16 06:52:34,062 [myid:] - INFO  [NIOWorkerThread-13:o.a.z.s.ZooKeeperServer@1188] - Invalid session 0x100a44df2270017 for client /127.0.0.1:52079, probably expired
-2024-02-16 09:46:42,998 [myid:] - WARN  [NIOWorkerThread-5:o.a.z.s.NIOServerCnxn@390] - Close of session 0x100a44df2270018
+2024-02-20 13:38:56,409 [myid:] - INFO  [SessionTracker:o.a.z.s.ZooKeeperServer@730] - Expiring session 0x100018dd1160012, timeout of 4000ms exceeded
+2024-02-20 13:39:55,651 [myid:] - WARN  [NIOWorkerThread-4:o.a.z.s.NIOServerCnxn@390] - Close of session 0x100018dd1160015
 java.net.SocketException: Connection reset
 	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
 	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
@@ -321,8 +318,8 @@ java.net.SocketException: Connection reset
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:842)
-2024-02-16 09:46:47,364 [myid:] - INFO  [SessionTracker:o.a.z.s.ZooKeeperServer@730] - Expiring session 0x100a44df2270018, timeout of 4000ms exceeded
-2024-02-16 09:54:17,842 [myid:] - WARN  [NIOWorkerThread-5:o.a.z.s.NIOServerCnxn@390] - Close of session 0x100a44df227001a
+2024-02-20 13:40:00,408 [myid:] - INFO  [SessionTracker:o.a.z.s.ZooKeeperServer@730] - Expiring session 0x100018dd1160015, timeout of 4000ms exceeded
+2024-02-20 13:40:08,688 [myid:] - WARN  [NIOWorkerThread-9:o.a.z.s.NIOServerCnxn@390] - Close of session 0x100018dd1160014
 java.net.SocketException: Connection reset
 	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
 	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
@@ -332,8 +329,8 @@ java.net.SocketException: Connection reset
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:842)
-2024-02-16 09:54:21,364 [myid:] - INFO  [SessionTracker:o.a.z.s.ZooKeeperServer@730] - Expiring session 0x100a44df227001a, timeout of 4000ms exceeded
-2024-02-16 09:54:31,939 [myid:] - WARN  [NIOWorkerThread-15:o.a.z.s.NIOServerCnxn@390] - Close of session 0x100a44df2270019
+2024-02-20 13:40:12,409 [myid:] - INFO  [SessionTracker:o.a.z.s.ZooKeeperServer@730] - Expiring session 0x100018dd1160014, timeout of 4000ms exceeded
+2024-02-20 13:41:14,612 [myid:] - WARN  [NIOWorkerThread-16:o.a.z.s.NIOServerCnxn@390] - Close of session 0x100018dd1160017
 java.net.SocketException: Connection reset
 	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
 	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
@@ -343,8 +340,8 @@ java.net.SocketException: Connection reset
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:842)
-2024-02-16 09:54:35,364 [myid:] - INFO  [SessionTracker:o.a.z.s.ZooKeeperServer@730] - Expiring session 0x100a44df2270019, timeout of 4000ms exceeded
-2024-02-16 10:01:56,079 [myid:] - WARN  [NIOWorkerThread-4:o.a.z.s.NIOServerCnxn@390] - Close of session 0x100a44df227001b
+2024-02-20 13:41:18,408 [myid:] - INFO  [SessionTracker:o.a.z.s.ZooKeeperServer@730] - Expiring session 0x100018dd1160017, timeout of 4000ms exceeded
+2024-02-20 13:42:17,268 [myid:] - WARN  [NIOWorkerThread-15:o.a.z.s.NIOServerCnxn@390] - Close of session 0x100018dd1160016
 java.net.SocketException: Connection reset
 	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
 	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
@@ -354,8 +351,8 @@ java.net.SocketException: Connection reset
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:842)
-2024-02-16 10:02:01,374 [myid:] - INFO  [SessionTracker:o.a.z.s.ZooKeeperServer@730] - Expiring session 0x100a44df227001b, timeout of 4000ms exceeded
-2024-02-16 10:15:32,372 [myid:] - WARN  [NIOWorkerThread-15:o.a.z.s.NIOServerCnxn@390] - Close of session 0x100a44df227001c
+2024-02-20 13:42:22,408 [myid:] - INFO  [SessionTracker:o.a.z.s.ZooKeeperServer@730] - Expiring session 0x100018dd1160016, timeout of 4000ms exceeded
+2024-02-20 13:44:13,074 [myid:] - WARN  [NIOWorkerThread-10:o.a.z.s.NIOServerCnxn@390] - Close of session 0x100018dd1160018
 java.net.SocketException: Connection reset
 	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
 	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
@@ -365,8 +362,8 @@ java.net.SocketException: Connection reset
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:842)
-2024-02-16 10:15:37,364 [myid:] - INFO  [SessionTracker:o.a.z.s.ZooKeeperServer@730] - Expiring session 0x100a44df227001c, timeout of 4000ms exceeded
-2024-02-16 10:16:08,894 [myid:] - WARN  [NIOWorkerThread-15:o.a.z.s.NIOServerCnxn@390] - Close of session 0x100a44df227001e
+2024-02-20 13:44:16,408 [myid:] - INFO  [SessionTracker:o.a.z.s.ZooKeeperServer@730] - Expiring session 0x100018dd1160018, timeout of 4000ms exceeded
+2024-02-20 13:44:27,608 [myid:] - WARN  [NIOWorkerThread-1:o.a.z.s.NIOServerCnxn@390] - Close of session 0x100018dd1160019
 java.net.SocketException: Connection reset
 	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
 	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
@@ -376,8 +373,8 @@ java.net.SocketException: Connection reset
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:842)
-2024-02-16 10:16:13,364 [myid:] - INFO  [SessionTracker:o.a.z.s.ZooKeeperServer@730] - Expiring session 0x100a44df227001e, timeout of 4000ms exceeded
-2024-02-16 10:16:22,629 [myid:] - WARN  [NIOWorkerThread-7:o.a.z.s.NIOServerCnxn@390] - Close of session 0x100a44df227001d
+2024-02-20 13:44:32,409 [myid:] - INFO  [SessionTracker:o.a.z.s.ZooKeeperServer@730] - Expiring session 0x100018dd1160019, timeout of 4000ms exceeded
+2024-02-20 14:01:10,404 [myid:] - WARN  [NIOWorkerThread-8:o.a.z.s.NIOServerCnxn@390] - Close of session 0x100018dd116001a
 java.net.SocketException: Connection reset
 	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
 	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
@@ -387,581 +384,4 @@ java.net.SocketException: Connection reset
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:842)
-2024-02-16 10:16:27,365 [myid:] - INFO  [SessionTracker:o.a.z.s.ZooKeeperServer@730] - Expiring session 0x100a44df227001d, timeout of 4000ms exceeded
-2024-02-16 10:26:45,128 [myid:] - INFO  [NIOWorkerThread-9:o.a.z.s.NIOServerCnxn@339] - Unable to read additional data from client, it probably closed the socket: address = /[0:0:0:0:0:0:0:1]:57940, session = 0x100a44df227001f
-2024-02-16 10:26:45,345 [myid:] - INFO  [SessionTracker:o.a.z.s.ZooKeeperServer@730] - Expiring session 0x100a44df227001f, timeout of 4000ms exceeded
-2024-02-16 10:26:46,191 [myid:] - INFO  [NIOWorkerThread-7:o.a.z.s.ZooKeeperServer@1188] - Invalid session 0x100a44df227001f for client /127.0.0.1:58765, probably expired
-2024-02-16 10:29:31,577 [myid:] - WARN  [NIOWorkerThread-5:o.a.z.s.NIOServerCnxn@390] - Close of session 0x100a44df2270021
-java.net.SocketException: Connection reset
-	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
-	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
-	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:333)
-	at org.apache.zookeeper.server.NIOServerCnxnFactory$IOWorkRequest.doWork(NIOServerCnxnFactory.java:508)
-	at org.apache.zookeeper.server.WorkerService$ScheduledWorkRequest.run(WorkerService.java:153)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-2024-02-16 10:29:35,359 [myid:] - INFO  [SessionTracker:o.a.z.s.ZooKeeperServer@730] - Expiring session 0x100a44df2270021, timeout of 4000ms exceeded
-2024-02-16 10:30:32,314 [myid:] - WARN  [NIOWorkerThread-4:o.a.z.s.NIOServerCnxn@390] - Close of session 0x100a44df2270022
-java.net.SocketException: Connection reset
-	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
-	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
-	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:333)
-	at org.apache.zookeeper.server.NIOServerCnxnFactory$IOWorkRequest.doWork(NIOServerCnxnFactory.java:508)
-	at org.apache.zookeeper.server.WorkerService$ScheduledWorkRequest.run(WorkerService.java:153)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-2024-02-16 10:30:35,359 [myid:] - INFO  [SessionTracker:o.a.z.s.ZooKeeperServer@730] - Expiring session 0x100a44df2270022, timeout of 4000ms exceeded
-2024-02-16 10:31:24,456 [myid:] - WARN  [NIOWorkerThread-2:o.a.z.s.NIOServerCnxn@390] - Close of session 0x100a44df2270023
-java.net.SocketException: Connection reset
-	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
-	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
-	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:333)
-	at org.apache.zookeeper.server.NIOServerCnxnFactory$IOWorkRequest.doWork(NIOServerCnxnFactory.java:508)
-	at org.apache.zookeeper.server.WorkerService$ScheduledWorkRequest.run(WorkerService.java:153)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-2024-02-16 10:31:27,358 [myid:] - INFO  [SessionTracker:o.a.z.s.ZooKeeperServer@730] - Expiring session 0x100a44df2270023, timeout of 4000ms exceeded
-2024-02-16 10:32:15,999 [myid:] - WARN  [NIOWorkerThread-1:o.a.z.s.NIOServerCnxn@390] - Close of session 0x100a44df2270020
-java.net.SocketException: Connection reset
-	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
-	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
-	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:333)
-	at org.apache.zookeeper.server.NIOServerCnxnFactory$IOWorkRequest.doWork(NIOServerCnxnFactory.java:508)
-	at org.apache.zookeeper.server.WorkerService$ScheduledWorkRequest.run(WorkerService.java:153)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-2024-02-16 10:32:19,367 [myid:] - INFO  [SessionTracker:o.a.z.s.ZooKeeperServer@730] - Expiring session 0x100a44df2270020, timeout of 4000ms exceeded
-2024-02-16 10:59:51,390 [myid:] - WARN  [NIOWorkerThread-3:o.a.z.s.NIOServerCnxn@390] - Close of session 0x100a44df2270024
-java.net.SocketException: Connection reset
-	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
-	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
-	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:333)
-	at org.apache.zookeeper.server.NIOServerCnxnFactory$IOWorkRequest.doWork(NIOServerCnxnFactory.java:508)
-	at org.apache.zookeeper.server.WorkerService$ScheduledWorkRequest.run(WorkerService.java:153)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-2024-02-16 10:59:55,358 [myid:] - INFO  [SessionTracker:o.a.z.s.ZooKeeperServer@730] - Expiring session 0x100a44df2270024, timeout of 4000ms exceeded
-2024-02-16 11:04:20,146 [myid:] - WARN  [NIOWorkerThread-8:o.a.z.s.NIOServerCnxn@390] - Close of session 0x100a44df2270026
-java.net.SocketException: Connection reset
-	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
-	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
-	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:333)
-	at org.apache.zookeeper.server.NIOServerCnxnFactory$IOWorkRequest.doWork(NIOServerCnxnFactory.java:508)
-	at org.apache.zookeeper.server.WorkerService$ScheduledWorkRequest.run(WorkerService.java:153)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-2024-02-16 11:04:23,359 [myid:] - INFO  [SessionTracker:o.a.z.s.ZooKeeperServer@730] - Expiring session 0x100a44df2270026, timeout of 4000ms exceeded
-2024-02-16 11:05:32,278 [myid:] - WARN  [NIOWorkerThread-14:o.a.z.s.NIOServerCnxn@390] - Close of session 0x100a44df2270027
-java.net.SocketException: Connection reset
-	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
-	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
-	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:333)
-	at org.apache.zookeeper.server.NIOServerCnxnFactory$IOWorkRequest.doWork(NIOServerCnxnFactory.java:508)
-	at org.apache.zookeeper.server.WorkerService$ScheduledWorkRequest.run(WorkerService.java:153)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-2024-02-16 11:05:35,359 [myid:] - INFO  [SessionTracker:o.a.z.s.ZooKeeperServer@730] - Expiring session 0x100a44df2270027, timeout of 4000ms exceeded
-2024-02-16 11:05:54,380 [myid:] - WARN  [NIOWorkerThread-8:o.a.z.s.NIOServerCnxn@390] - Close of session 0x100a44df2270025
-java.net.SocketException: Connection reset
-	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
-	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
-	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:333)
-	at org.apache.zookeeper.server.NIOServerCnxnFactory$IOWorkRequest.doWork(NIOServerCnxnFactory.java:508)
-	at org.apache.zookeeper.server.WorkerService$ScheduledWorkRequest.run(WorkerService.java:153)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-2024-02-16 11:05:59,370 [myid:] - INFO  [SessionTracker:o.a.z.s.ZooKeeperServer@730] - Expiring session 0x100a44df2270025, timeout of 4000ms exceeded
-2024-02-16 11:07:10,702 [myid:] - WARN  [NIOWorkerThread-7:o.a.z.s.NIOServerCnxn@390] - Close of session 0x100a44df2270029
-java.net.SocketException: Connection reset
-	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
-	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
-	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:333)
-	at org.apache.zookeeper.server.NIOServerCnxnFactory$IOWorkRequest.doWork(NIOServerCnxnFactory.java:508)
-	at org.apache.zookeeper.server.WorkerService$ScheduledWorkRequest.run(WorkerService.java:153)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-2024-02-16 11:07:15,358 [myid:] - INFO  [SessionTracker:o.a.z.s.ZooKeeperServer@730] - Expiring session 0x100a44df2270029, timeout of 4000ms exceeded
-2024-02-16 11:10:24,532 [myid:] - WARN  [NIOWorkerThread-11:o.a.z.s.NIOServerCnxn@390] - Close of session 0x100a44df2270028
-java.net.SocketException: Connection reset
-	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
-	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
-	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:333)
-	at org.apache.zookeeper.server.NIOServerCnxnFactory$IOWorkRequest.doWork(NIOServerCnxnFactory.java:508)
-	at org.apache.zookeeper.server.WorkerService$ScheduledWorkRequest.run(WorkerService.java:153)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-2024-02-16 11:10:29,362 [myid:] - INFO  [SessionTracker:o.a.z.s.ZooKeeperServer@730] - Expiring session 0x100a44df2270028, timeout of 4000ms exceeded
-2024-02-16 11:23:48,796 [myid:] - WARN  [NIOWorkerThread-3:o.a.z.s.NIOServerCnxn@390] - Close of session 0x100a44df227002b
-java.net.SocketException: Connection reset
-	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
-	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
-	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:333)
-	at org.apache.zookeeper.server.NIOServerCnxnFactory$IOWorkRequest.doWork(NIOServerCnxnFactory.java:508)
-	at org.apache.zookeeper.server.WorkerService$ScheduledWorkRequest.run(WorkerService.java:153)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-2024-02-16 11:23:53,358 [myid:] - INFO  [SessionTracker:o.a.z.s.ZooKeeperServer@730] - Expiring session 0x100a44df227002b, timeout of 4000ms exceeded
-2024-02-16 11:25:41,004 [myid:] - WARN  [NIOWorkerThread-10:o.a.z.s.NIOServerCnxn@390] - Close of session 0x100a44df227002c
-java.net.SocketException: Connection reset
-	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
-	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
-	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:333)
-	at org.apache.zookeeper.server.NIOServerCnxnFactory$IOWorkRequest.doWork(NIOServerCnxnFactory.java:508)
-	at org.apache.zookeeper.server.WorkerService$ScheduledWorkRequest.run(WorkerService.java:153)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-2024-02-16 11:25:45,359 [myid:] - INFO  [SessionTracker:o.a.z.s.ZooKeeperServer@730] - Expiring session 0x100a44df227002c, timeout of 4000ms exceeded
-2024-02-16 11:32:00,150 [myid:] - WARN  [NIOWorkerThread-9:o.a.z.s.NIOServerCnxn@390] - Close of session 0x100a44df227002a
-java.net.SocketException: Connection reset
-	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
-	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
-	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:333)
-	at org.apache.zookeeper.server.NIOServerCnxnFactory$IOWorkRequest.doWork(NIOServerCnxnFactory.java:508)
-	at org.apache.zookeeper.server.WorkerService$ScheduledWorkRequest.run(WorkerService.java:153)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-2024-02-16 11:32:05,358 [myid:] - INFO  [SessionTracker:o.a.z.s.ZooKeeperServer@730] - Expiring session 0x100a44df227002a, timeout of 4000ms exceeded
-2024-02-16 11:33:05,240 [myid:] - WARN  [NIOWorkerThread-6:o.a.z.s.NIOServerCnxn@390] - Close of session 0x100a44df227002e
-java.net.SocketException: Connection reset
-	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
-	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
-	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:333)
-	at org.apache.zookeeper.server.NIOServerCnxnFactory$IOWorkRequest.doWork(NIOServerCnxnFactory.java:508)
-	at org.apache.zookeeper.server.WorkerService$ScheduledWorkRequest.run(WorkerService.java:153)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-2024-02-16 11:33:09,358 [myid:] - INFO  [SessionTracker:o.a.z.s.ZooKeeperServer@730] - Expiring session 0x100a44df227002e, timeout of 4000ms exceeded
-2024-02-16 11:33:32,822 [myid:] - WARN  [NIOWorkerThread-13:o.a.z.s.NIOServerCnxn@390] - Close of session 0x100a44df227002d
-java.net.SocketException: Connection reset
-	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
-	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
-	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:333)
-	at org.apache.zookeeper.server.NIOServerCnxnFactory$IOWorkRequest.doWork(NIOServerCnxnFactory.java:508)
-	at org.apache.zookeeper.server.WorkerService$ScheduledWorkRequest.run(WorkerService.java:153)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-2024-02-16 11:33:37,358 [myid:] - INFO  [SessionTracker:o.a.z.s.ZooKeeperServer@730] - Expiring session 0x100a44df227002d, timeout of 4000ms exceeded
-2024-02-16 11:53:06,944 [myid:] - WARN  [NIOWorkerThread-1:o.a.z.s.NIOServerCnxn@390] - Close of session 0x100a44df2270030
-java.net.SocketException: Connection reset
-	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
-	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
-	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:333)
-	at org.apache.zookeeper.server.NIOServerCnxnFactory$IOWorkRequest.doWork(NIOServerCnxnFactory.java:508)
-	at org.apache.zookeeper.server.WorkerService$ScheduledWorkRequest.run(WorkerService.java:153)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-2024-02-16 11:53:11,358 [myid:] - INFO  [SessionTracker:o.a.z.s.ZooKeeperServer@730] - Expiring session 0x100a44df2270030, timeout of 4000ms exceeded
-2024-02-16 12:20:09,335 [myid:] - WARN  [NIOWorkerThread-5:o.a.z.s.NIOServerCnxn@390] - Close of session 0x100a44df227002f
-java.net.SocketException: Connection reset
-	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
-	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
-	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:333)
-	at org.apache.zookeeper.server.NIOServerCnxnFactory$IOWorkRequest.doWork(NIOServerCnxnFactory.java:508)
-	at org.apache.zookeeper.server.WorkerService$ScheduledWorkRequest.run(WorkerService.java:153)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-2024-02-16 12:20:13,359 [myid:] - INFO  [SessionTracker:o.a.z.s.ZooKeeperServer@730] - Expiring session 0x100a44df227002f, timeout of 4000ms exceeded
-2024-02-16 12:21:18,228 [myid:] - WARN  [NIOWorkerThread-4:o.a.z.s.NIOServerCnxn@390] - Close of session 0x100a44df2270032
-java.net.SocketException: Connection reset
-	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
-	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
-	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:333)
-	at org.apache.zookeeper.server.NIOServerCnxnFactory$IOWorkRequest.doWork(NIOServerCnxnFactory.java:508)
-	at org.apache.zookeeper.server.WorkerService$ScheduledWorkRequest.run(WorkerService.java:153)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-2024-02-16 12:21:21,358 [myid:] - INFO  [SessionTracker:o.a.z.s.ZooKeeperServer@730] - Expiring session 0x100a44df2270032, timeout of 4000ms exceeded
-2024-02-16 12:28:52,956 [myid:] - WARN  [NIOWorkerThread-13:o.a.z.s.NIOServerCnxn@390] - Close of session 0x100a44df2270033
-java.net.SocketException: Connection reset
-	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
-	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
-	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:333)
-	at org.apache.zookeeper.server.NIOServerCnxnFactory$IOWorkRequest.doWork(NIOServerCnxnFactory.java:508)
-	at org.apache.zookeeper.server.WorkerService$ScheduledWorkRequest.run(WorkerService.java:153)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-2024-02-16 12:28:57,359 [myid:] - INFO  [SessionTracker:o.a.z.s.ZooKeeperServer@730] - Expiring session 0x100a44df2270033, timeout of 4000ms exceeded
-2024-02-16 12:41:51,231 [myid:] - WARN  [NIOWorkerThread-2:o.a.z.s.NIOServerCnxn@390] - Close of session 0x100a44df2270034
-java.net.SocketException: Connection reset
-	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
-	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
-	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:333)
-	at org.apache.zookeeper.server.NIOServerCnxnFactory$IOWorkRequest.doWork(NIOServerCnxnFactory.java:508)
-	at org.apache.zookeeper.server.WorkerService$ScheduledWorkRequest.run(WorkerService.java:153)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-2024-02-16 12:41:55,358 [myid:] - INFO  [SessionTracker:o.a.z.s.ZooKeeperServer@730] - Expiring session 0x100a44df2270034, timeout of 4000ms exceeded
-2024-02-16 12:43:01,350 [myid:] - WARN  [NIOWorkerThread-2:o.a.z.s.NIOServerCnxn@390] - Close of session 0x100a44df2270031
-java.net.SocketException: Connection reset
-	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
-	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
-	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:333)
-	at org.apache.zookeeper.server.NIOServerCnxnFactory$IOWorkRequest.doWork(NIOServerCnxnFactory.java:508)
-	at org.apache.zookeeper.server.WorkerService$ScheduledWorkRequest.run(WorkerService.java:153)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-2024-02-16 12:43:05,359 [myid:] - INFO  [SessionTracker:o.a.z.s.ZooKeeperServer@730] - Expiring session 0x100a44df2270031, timeout of 4000ms exceeded
-2024-02-16 12:44:25,077 [myid:] - WARN  [NIOWorkerThread-14:o.a.z.s.NIOServerCnxn@390] - Close of session 0x100a44df2270036
-java.net.SocketException: Connection reset
-	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
-	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
-	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:333)
-	at org.apache.zookeeper.server.NIOServerCnxnFactory$IOWorkRequest.doWork(NIOServerCnxnFactory.java:508)
-	at org.apache.zookeeper.server.WorkerService$ScheduledWorkRequest.run(WorkerService.java:153)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-2024-02-16 12:44:29,359 [myid:] - INFO  [SessionTracker:o.a.z.s.ZooKeeperServer@730] - Expiring session 0x100a44df2270036, timeout of 4000ms exceeded
-2024-02-16 12:47:50,884 [myid:] - WARN  [NIOWorkerThread-2:o.a.z.s.NIOServerCnxn@390] - Close of session 0x100a44df2270035
-java.net.SocketException: Connection reset
-	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
-	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
-	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:333)
-	at org.apache.zookeeper.server.NIOServerCnxnFactory$IOWorkRequest.doWork(NIOServerCnxnFactory.java:508)
-	at org.apache.zookeeper.server.WorkerService$ScheduledWorkRequest.run(WorkerService.java:153)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-2024-02-16 12:47:55,358 [myid:] - INFO  [SessionTracker:o.a.z.s.ZooKeeperServer@730] - Expiring session 0x100a44df2270035, timeout of 4000ms exceeded
-2024-02-16 12:49:26,447 [myid:] - WARN  [NIOWorkerThread-4:o.a.z.s.NIOServerCnxn@390] - Close of session 0x100a44df2270038
-java.net.SocketException: Connection reset
-	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
-	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
-	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:333)
-	at org.apache.zookeeper.server.NIOServerCnxnFactory$IOWorkRequest.doWork(NIOServerCnxnFactory.java:508)
-	at org.apache.zookeeper.server.WorkerService$ScheduledWorkRequest.run(WorkerService.java:153)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-2024-02-16 12:49:29,359 [myid:] - INFO  [SessionTracker:o.a.z.s.ZooKeeperServer@730] - Expiring session 0x100a44df2270038, timeout of 4000ms exceeded
-2024-02-16 12:52:18,723 [myid:] - WARN  [NIOWorkerThread-10:o.a.z.s.NIOServerCnxn@390] - Close of session 0x100a44df227003a
-java.net.SocketException: Connection reset
-	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
-	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
-	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:333)
-	at org.apache.zookeeper.server.NIOServerCnxnFactory$IOWorkRequest.doWork(NIOServerCnxnFactory.java:508)
-	at org.apache.zookeeper.server.WorkerService$ScheduledWorkRequest.run(WorkerService.java:153)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-2024-02-16 12:52:23,358 [myid:] - INFO  [SessionTracker:o.a.z.s.ZooKeeperServer@730] - Expiring session 0x100a44df227003a, timeout of 4000ms exceeded
-2024-02-16 12:52:40,392 [myid:] - WARN  [NIOWorkerThread-4:o.a.z.s.NIOServerCnxn@390] - Close of session 0x100a44df2270037
-java.net.SocketException: Connection reset
-	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
-	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
-	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:333)
-	at org.apache.zookeeper.server.NIOServerCnxnFactory$IOWorkRequest.doWork(NIOServerCnxnFactory.java:508)
-	at org.apache.zookeeper.server.WorkerService$ScheduledWorkRequest.run(WorkerService.java:153)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-2024-02-16 12:52:45,358 [myid:] - INFO  [SessionTracker:o.a.z.s.ZooKeeperServer@730] - Expiring session 0x100a44df2270037, timeout of 4000ms exceeded
-2024-02-16 12:52:47,209 [myid:] - WARN  [NIOWorkerThread-4:o.a.z.s.NIOServerCnxn@390] - Close of session 0x100a44df2270039
-java.net.SocketException: Connection reset
-	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
-	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
-	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:333)
-	at org.apache.zookeeper.server.NIOServerCnxnFactory$IOWorkRequest.doWork(NIOServerCnxnFactory.java:508)
-	at org.apache.zookeeper.server.WorkerService$ScheduledWorkRequest.run(WorkerService.java:153)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-2024-02-16 12:52:51,358 [myid:] - INFO  [SessionTracker:o.a.z.s.ZooKeeperServer@730] - Expiring session 0x100a44df2270039, timeout of 4000ms exceeded
-2024-02-16 12:53:59,135 [myid:] - WARN  [NIOWorkerThread-3:o.a.z.s.NIOServerCnxn@390] - Close of session 0x100a44df227003c
-java.net.SocketException: Connection reset
-	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
-	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
-	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:333)
-	at org.apache.zookeeper.server.NIOServerCnxnFactory$IOWorkRequest.doWork(NIOServerCnxnFactory.java:508)
-	at org.apache.zookeeper.server.WorkerService$ScheduledWorkRequest.run(WorkerService.java:153)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-2024-02-16 12:54:03,357 [myid:] - INFO  [SessionTracker:o.a.z.s.ZooKeeperServer@730] - Expiring session 0x100a44df227003c, timeout of 4000ms exceeded
-2024-02-16 13:04:36,657 [myid:] - WARN  [NIOWorkerThread-3:o.a.z.s.NIOServerCnxn@390] - Close of session 0x100a44df227003b
-java.net.SocketException: Connection reset
-	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
-	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
-	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:333)
-	at org.apache.zookeeper.server.NIOServerCnxnFactory$IOWorkRequest.doWork(NIOServerCnxnFactory.java:508)
-	at org.apache.zookeeper.server.WorkerService$ScheduledWorkRequest.run(WorkerService.java:153)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-2024-02-16 13:04:41,359 [myid:] - INFO  [SessionTracker:o.a.z.s.ZooKeeperServer@730] - Expiring session 0x100a44df227003b, timeout of 4000ms exceeded
-2024-02-16 13:08:54,665 [myid:] - WARN  [NIOWorkerThread-15:o.a.z.s.NIOServerCnxn@390] - Close of session 0x100a44df227003f
-java.net.SocketException: Connection reset
-	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
-	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
-	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:333)
-	at org.apache.zookeeper.server.NIOServerCnxnFactory$IOWorkRequest.doWork(NIOServerCnxnFactory.java:508)
-	at org.apache.zookeeper.server.WorkerService$ScheduledWorkRequest.run(WorkerService.java:153)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-2024-02-16 13:08:57,359 [myid:] - INFO  [SessionTracker:o.a.z.s.ZooKeeperServer@730] - Expiring session 0x100a44df227003f, timeout of 4000ms exceeded
-2024-02-16 13:09:31,924 [myid:] - WARN  [NIOWorkerThread-1:o.a.z.s.NIOServerCnxn@390] - Close of session 0x100a44df227003e
-java.net.SocketException: Connection reset
-	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
-	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
-	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:333)
-	at org.apache.zookeeper.server.NIOServerCnxnFactory$IOWorkRequest.doWork(NIOServerCnxnFactory.java:508)
-	at org.apache.zookeeper.server.WorkerService$ScheduledWorkRequest.run(WorkerService.java:153)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-2024-02-16 13:09:37,358 [myid:] - INFO  [SessionTracker:o.a.z.s.ZooKeeperServer@730] - Expiring session 0x100a44df227003e, timeout of 4000ms exceeded
-2024-02-16 13:09:43,390 [myid:] - WARN  [NIOWorkerThread-3:o.a.z.s.NIOServerCnxn@390] - Close of session 0x100a44df227003d
-java.net.SocketException: Connection reset
-	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
-	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
-	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:333)
-	at org.apache.zookeeper.server.NIOServerCnxnFactory$IOWorkRequest.doWork(NIOServerCnxnFactory.java:508)
-	at org.apache.zookeeper.server.WorkerService$ScheduledWorkRequest.run(WorkerService.java:153)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-2024-02-16 13:09:47,358 [myid:] - INFO  [SessionTracker:o.a.z.s.ZooKeeperServer@730] - Expiring session 0x100a44df227003d, timeout of 4000ms exceeded
-2024-02-16 13:21:50,443 [myid:] - WARN  [NIOWorkerThread-4:o.a.z.s.NIOServerCnxn@390] - Close of session 0x100a44df2270040
-java.net.SocketException: Connection reset
-	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
-	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
-	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:333)
-	at org.apache.zookeeper.server.NIOServerCnxnFactory$IOWorkRequest.doWork(NIOServerCnxnFactory.java:508)
-	at org.apache.zookeeper.server.WorkerService$ScheduledWorkRequest.run(WorkerService.java:153)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-2024-02-16 13:21:55,358 [myid:] - INFO  [SessionTracker:o.a.z.s.ZooKeeperServer@730] - Expiring session 0x100a44df2270040, timeout of 4000ms exceeded
-2024-02-16 13:23:08,187 [myid:] - WARN  [NIOWorkerThread-1:o.a.z.s.NIOServerCnxn@390] - Close of session 0x100a44df2270042
-java.net.SocketException: Connection reset
-	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
-	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
-	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:333)
-	at org.apache.zookeeper.server.NIOServerCnxnFactory$IOWorkRequest.doWork(NIOServerCnxnFactory.java:508)
-	at org.apache.zookeeper.server.WorkerService$ScheduledWorkRequest.run(WorkerService.java:153)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-2024-02-16 13:23:11,359 [myid:] - INFO  [SessionTracker:o.a.z.s.ZooKeeperServer@730] - Expiring session 0x100a44df2270042, timeout of 4000ms exceeded
-2024-02-16 13:40:28,103 [myid:] - WARN  [NIOWorkerThread-2:o.a.z.s.NIOServerCnxn@390] - Close of session 0x100a44df2270041
-java.net.SocketException: Connection reset
-	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
-	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
-	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:333)
-	at org.apache.zookeeper.server.NIOServerCnxnFactory$IOWorkRequest.doWork(NIOServerCnxnFactory.java:508)
-	at org.apache.zookeeper.server.WorkerService$ScheduledWorkRequest.run(WorkerService.java:153)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-2024-02-16 13:40:33,358 [myid:] - INFO  [SessionTracker:o.a.z.s.ZooKeeperServer@730] - Expiring session 0x100a44df2270041, timeout of 4000ms exceeded
-2024-02-16 13:41:48,038 [myid:] - WARN  [NIOWorkerThread-8:o.a.z.s.NIOServerCnxn@390] - Close of session 0x100a44df2270044
-java.net.SocketException: Connection reset
-	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
-	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
-	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:333)
-	at org.apache.zookeeper.server.NIOServerCnxnFactory$IOWorkRequest.doWork(NIOServerCnxnFactory.java:508)
-	at org.apache.zookeeper.server.WorkerService$ScheduledWorkRequest.run(WorkerService.java:153)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-2024-02-16 13:41:51,358 [myid:] - INFO  [SessionTracker:o.a.z.s.ZooKeeperServer@730] - Expiring session 0x100a44df2270044, timeout of 4000ms exceeded
-2024-02-16 14:32:54,728 [myid:] - WARN  [NIOWorkerThread-7:o.a.z.s.NIOServerCnxn@390] - Close of session 0x100a44df2270043
-java.net.SocketException: Connection reset
-	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
-	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
-	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:333)
-	at org.apache.zookeeper.server.NIOServerCnxnFactory$IOWorkRequest.doWork(NIOServerCnxnFactory.java:508)
-	at org.apache.zookeeper.server.WorkerService$ScheduledWorkRequest.run(WorkerService.java:153)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-2024-02-16 14:32:59,358 [myid:] - INFO  [SessionTracker:o.a.z.s.ZooKeeperServer@730] - Expiring session 0x100a44df2270043, timeout of 4000ms exceeded
-2024-02-16 14:34:37,338 [myid:] - WARN  [NIOWorkerThread-14:o.a.z.s.NIOServerCnxn@390] - Close of session 0x100a44df2270046
-java.net.SocketException: Connection reset
-	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
-	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
-	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:333)
-	at org.apache.zookeeper.server.NIOServerCnxnFactory$IOWorkRequest.doWork(NIOServerCnxnFactory.java:508)
-	at org.apache.zookeeper.server.WorkerService$ScheduledWorkRequest.run(WorkerService.java:153)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-2024-02-16 14:34:41,359 [myid:] - INFO  [SessionTracker:o.a.z.s.ZooKeeperServer@730] - Expiring session 0x100a44df2270046, timeout of 4000ms exceeded
-2024-02-16 14:37:24,419 [myid:] - WARN  [NIOWorkerThread-5:o.a.z.s.NIOServerCnxn@390] - Close of session 0x100a44df2270048
-java.net.SocketException: Connection reset
-	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
-	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
-	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:333)
-	at org.apache.zookeeper.server.NIOServerCnxnFactory$IOWorkRequest.doWork(NIOServerCnxnFactory.java:508)
-	at org.apache.zookeeper.server.WorkerService$ScheduledWorkRequest.run(WorkerService.java:153)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-2024-02-16 14:37:27,359 [myid:] - INFO  [SessionTracker:o.a.z.s.ZooKeeperServer@730] - Expiring session 0x100a44df2270048, timeout of 4000ms exceeded
-2024-02-16 14:39:29,264 [myid:] - WARN  [NIOWorkerThread-7:o.a.z.s.NIOServerCnxn@390] - Close of session 0x100a44df2270049
-java.net.SocketException: Connection reset
-	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
-	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
-	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:333)
-	at org.apache.zookeeper.server.NIOServerCnxnFactory$IOWorkRequest.doWork(NIOServerCnxnFactory.java:508)
-	at org.apache.zookeeper.server.WorkerService$ScheduledWorkRequest.run(WorkerService.java:153)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-2024-02-16 14:39:33,358 [myid:] - INFO  [SessionTracker:o.a.z.s.ZooKeeperServer@730] - Expiring session 0x100a44df2270049, timeout of 4000ms exceeded
-2024-02-16 14:40:59,358 [myid:] - INFO  [SessionTracker:o.a.z.s.ZooKeeperServer@730] - Expiring session 0x100a44df227004a, timeout of 4000ms exceeded
-2024-02-16 14:52:44,198 [myid:] - INFO  [NIOWorkerThread-16:o.a.z.s.ZooKeeperServer@1188] - Invalid session 0x100a44df227004a for client /[0:0:0:0:0:0:0:1]:49892, probably expired
-2024-02-16 14:53:08,851 [myid:] - WARN  [NIOWorkerThread-12:o.a.z.s.NIOServerCnxn@390] - Close of session 0x100a44df2270045
-java.net.SocketException: Connection reset
-	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
-	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
-	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:333)
-	at org.apache.zookeeper.server.NIOServerCnxnFactory$IOWorkRequest.doWork(NIOServerCnxnFactory.java:508)
-	at org.apache.zookeeper.server.WorkerService$ScheduledWorkRequest.run(WorkerService.java:153)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-2024-02-16 14:53:13,358 [myid:] - INFO  [SessionTracker:o.a.z.s.ZooKeeperServer@730] - Expiring session 0x100a44df2270045, timeout of 4000ms exceeded
-2024-02-16 14:53:16,198 [myid:] - WARN  [NIOWorkerThread-14:o.a.z.s.NIOServerCnxn@390] - Close of session 0x100a44df2270047
-java.net.SocketException: Connection reset
-	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
-	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
-	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:333)
-	at org.apache.zookeeper.server.NIOServerCnxnFactory$IOWorkRequest.doWork(NIOServerCnxnFactory.java:508)
-	at org.apache.zookeeper.server.WorkerService$ScheduledWorkRequest.run(WorkerService.java:153)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-2024-02-16 14:53:21,359 [myid:] - INFO  [SessionTracker:o.a.z.s.ZooKeeperServer@730] - Expiring session 0x100a44df2270047, timeout of 4000ms exceeded
-2024-02-16 14:53:45,992 [myid:] - WARN  [NIOWorkerThread-3:o.a.z.s.NIOServerCnxn@390] - Close of session 0x100a44df227004b
-java.net.SocketException: Connection reset
-	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
-	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
-	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:333)
-	at org.apache.zookeeper.server.NIOServerCnxnFactory$IOWorkRequest.doWork(NIOServerCnxnFactory.java:508)
-	at org.apache.zookeeper.server.WorkerService$ScheduledWorkRequest.run(WorkerService.java:153)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-2024-02-16 14:53:51,358 [myid:] - INFO  [SessionTracker:o.a.z.s.ZooKeeperServer@730] - Expiring session 0x100a44df227004b, timeout of 4000ms exceeded
-2024-02-16 14:55:10,378 [myid:] - WARN  [NIOWorkerThread-6:o.a.z.s.NIOServerCnxn@390] - Close of session 0x100a44df227004d
-java.net.SocketException: Connection reset
-	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
-	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
-	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:333)
-	at org.apache.zookeeper.server.NIOServerCnxnFactory$IOWorkRequest.doWork(NIOServerCnxnFactory.java:508)
-	at org.apache.zookeeper.server.WorkerService$ScheduledWorkRequest.run(WorkerService.java:153)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-2024-02-16 14:55:13,358 [myid:] - INFO  [SessionTracker:o.a.z.s.ZooKeeperServer@730] - Expiring session 0x100a44df227004d, timeout of 4000ms exceeded
-2024-02-16 14:59:08,129 [myid:] - WARN  [NIOWorkerThread-12:o.a.z.s.NIOServerCnxn@390] - Close of session 0x100a44df227004c
-java.net.SocketException: Connection reset
-	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
-	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
-	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:333)
-	at org.apache.zookeeper.server.NIOServerCnxnFactory$IOWorkRequest.doWork(NIOServerCnxnFactory.java:508)
-	at org.apache.zookeeper.server.WorkerService$ScheduledWorkRequest.run(WorkerService.java:153)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-2024-02-16 14:59:11,358 [myid:] - INFO  [SessionTracker:o.a.z.s.ZooKeeperServer@730] - Expiring session 0x100a44df227004c, timeout of 4000ms exceeded
-2024-02-16 14:59:18,286 [myid:] - WARN  [NIOWorkerThread-4:o.a.z.s.NIOServerCnxn@390] - Close of session 0x100a44df227004e
-java.net.SocketException: Connection reset
-	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
-	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
-	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:333)
-	at org.apache.zookeeper.server.NIOServerCnxnFactory$IOWorkRequest.doWork(NIOServerCnxnFactory.java:508)
-	at org.apache.zookeeper.server.WorkerService$ScheduledWorkRequest.run(WorkerService.java:153)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-2024-02-16 14:59:23,358 [myid:] - INFO  [SessionTracker:o.a.z.s.ZooKeeperServer@730] - Expiring session 0x100a44df227004e, timeout of 4000ms exceeded
-2024-02-16 15:00:31,597 [myid:] - WARN  [NIOWorkerThread-9:o.a.z.s.NIOServerCnxn@390] - Close of session 0x100a44df2270050
-java.net.SocketException: Connection reset
-	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
-	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
-	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:333)
-	at org.apache.zookeeper.server.NIOServerCnxnFactory$IOWorkRequest.doWork(NIOServerCnxnFactory.java:508)
-	at org.apache.zookeeper.server.WorkerService$ScheduledWorkRequest.run(WorkerService.java:153)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-2024-02-16 15:00:35,358 [myid:] - INFO  [SessionTracker:o.a.z.s.ZooKeeperServer@730] - Expiring session 0x100a44df2270050, timeout of 4000ms exceeded
-2024-02-16 15:01:55,603 [myid:] - WARN  [NIOWorkerThread-8:o.a.z.s.NIOServerCnxn@390] - Close of session 0x100a44df227004f
-java.net.SocketException: Connection reset
-	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
-	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
-	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:333)
-	at org.apache.zookeeper.server.NIOServerCnxnFactory$IOWorkRequest.doWork(NIOServerCnxnFactory.java:508)
-	at org.apache.zookeeper.server.WorkerService$ScheduledWorkRequest.run(WorkerService.java:153)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-2024-02-16 15:01:59,358 [myid:] - INFO  [SessionTracker:o.a.z.s.ZooKeeperServer@730] - Expiring session 0x100a44df227004f, timeout of 4000ms exceeded
-2024-02-16 15:05:57,037 [myid:] - WARN  [NIOWorkerThread-5:o.a.z.s.NIOServerCnxn@390] - Close of session 0x100a44df2270051
-java.net.SocketException: Connection reset
-	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
-	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
-	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:333)
-	at org.apache.zookeeper.server.NIOServerCnxnFactory$IOWorkRequest.doWork(NIOServerCnxnFactory.java:508)
-	at org.apache.zookeeper.server.WorkerService$ScheduledWorkRequest.run(WorkerService.java:153)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-2024-02-16 15:06:01,358 [myid:] - INFO  [SessionTracker:o.a.z.s.ZooKeeperServer@730] - Expiring session 0x100a44df2270051, timeout of 4000ms exceeded
-2024-02-16 15:07:15,956 [myid:] - WARN  [NIOWorkerThread-7:o.a.z.s.NIOServerCnxn@390] - Close of session 0x100a44df2270053
-java.net.SocketException: Connection reset
-	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
-	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
-	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:333)
-	at org.apache.zookeeper.server.NIOServerCnxnFactory$IOWorkRequest.doWork(NIOServerCnxnFactory.java:508)
-	at org.apache.zookeeper.server.WorkerService$ScheduledWorkRequest.run(WorkerService.java:153)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-2024-02-16 15:07:19,358 [myid:] - INFO  [SessionTracker:o.a.z.s.ZooKeeperServer@730] - Expiring session 0x100a44df2270053, timeout of 4000ms exceeded
-2024-02-16 15:09:51,332 [myid:] - WARN  [NIOWorkerThread-1:o.a.z.s.NIOServerCnxn@390] - Close of session 0x100a44df2270052
-java.net.SocketException: Connection reset
-	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
-	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
-	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:333)
-	at org.apache.zookeeper.server.NIOServerCnxnFactory$IOWorkRequest.doWork(NIOServerCnxnFactory.java:508)
-	at org.apache.zookeeper.server.WorkerService$ScheduledWorkRequest.run(WorkerService.java:153)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-2024-02-16 15:09:55,358 [myid:] - INFO  [SessionTracker:o.a.z.s.ZooKeeperServer@730] - Expiring session 0x100a44df2270052, timeout of 4000ms exceeded
-2024-02-16 15:11:21,311 [myid:] - WARN  [NIOWorkerThread-7:o.a.z.s.NIOServerCnxn@390] - Close of session 0x100a44df2270055
-java.net.SocketException: Connection reset
-	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
-	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
-	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:333)
-	at org.apache.zookeeper.server.NIOServerCnxnFactory$IOWorkRequest.doWork(NIOServerCnxnFactory.java:508)
-	at org.apache.zookeeper.server.WorkerService$ScheduledWorkRequest.run(WorkerService.java:153)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-2024-02-16 15:11:25,359 [myid:] - INFO  [SessionTracker:o.a.z.s.ZooKeeperServer@730] - Expiring session 0x100a44df2270055, timeout of 4000ms exceeded
+2024-02-20 14:01:14,408 [myid:] - INFO  [SessionTracker:o.a.z.s.ZooKeeperServer@730] - Expiring session 0x100018dd116001a, timeout of 4000ms exceeded
