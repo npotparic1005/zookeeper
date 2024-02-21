@@ -205,8 +205,9 @@ public class AppServer extends SyncPrimitive implements Runnable, ReplicatedLog.
 			e.printStackTrace();
 		}
 	}
-	/*
+
 	//1.2 inicijalizacija stanja servera prolaskom kroz log
+	/*
 	private void initializeStateFromLog(String logFileName, AccountServiceGrpc.AccountServiceBlockingStub blockingStub) {
 		try (BufferedReader reader = new BufferedReader(new FileReader(logFileName))) {
 			String line;
@@ -258,7 +259,9 @@ public class AppServer extends SyncPrimitive implements Runnable, ReplicatedLog.
 			System.out.println(".WITDRAWAL_REJECT_NOT_SUFFICIENT_AMOUNT! Amount" + request.getAmount());
 		}
 	}
-*/
+
+
+	 */
 	private void initializeStateFromLog(String logFileName) {
 		try (BufferedReader reader = new BufferedReader(new FileReader(logFileName))) {
 			String line;
@@ -311,9 +314,11 @@ public class AppServer extends SyncPrimitive implements Runnable, ReplicatedLog.
 
 	// Funkcija za ispis rezultata
 	private void ispisResponse(AccountResponse response, int requestId) {
-		// Implementirajte logiku za ispis rezultata, na primer, možete ispisati status i balans koji je vraćen u odgovoru
 		System.out.println("Request ID: " + requestId + ", Status: " + response.getStatus() + ", Balance: " + response.getBalance());
 	}
+
+
+
 	public void election() throws KeeperException, InterruptedException {
 		checkReplicaCandidate();
 	}
@@ -405,8 +410,17 @@ public class AppServer extends SyncPrimitive implements Runnable, ReplicatedLog.
 		accService.loadFromSnapshot();
 		replicatedLog.loadFromSnapshot();
 
+		/*ManagedChannel channel = ManagedChannelBuilder.forAddress(InetAddress.getLocalHost().getHostAddress(),gRPCPort)
+				.usePlaintext()
+				.build();
+
+		AccountServiceGrpc.AccountServiceBlockingStub blockingStub = AccountServiceGrpc.newBlockingStub(channel);
+
+		 */
 		//1.2 Inicijalizacija stanja iz log fajla
+		//node.initializeStateFromLog(logFileName,blockingStub);
 		node.initializeStateFromLog(logFileName);
+
 
 
 		Server gRPCServer = ServerBuilder
